@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  A short text that explains what the place is about, how big it is, how many people may be seated 
+  there, where in the city it is located, and how to make a reservation. Please have some text that is 
+  the typical sales pitch about how nice the place is, how perfect it is for a party, etc. The content is 
+  not important, but the use of headings, emphasis, and scalability (desktop & mobile) are! Important 
+  information mentioned in the first sentence here should be easy to find.
+-->
+
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Importering av css -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/booking.css">
+
+  <title>Booking</title>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href="index.html">Welcome</a>
+    <a href="booking.html">Booking</a>
+    <a href="meny.html">Meny</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="topical-page.html">Topical Page</a>
+  </div>
+
+  <div>
+    <h1>Booking</h1>
+    <p>
+      Reserver et eller flere bord, ta kontakt med oss for en større
+      bestilling.
+    </p>
+    <p>
+       Vi har kapasitet til 100 personer, med et areal på 350 kvadratmeter, er
+      det nok av dansegulv til flere mennesker.
+    </p>
+    <p>
+      Vi har flere fasiliteter deriblant shuffelboard, billiard og masse mer!
+    </p>
+  </div>
+  
+        
+      
+<div class="bookBox">
+  <img src="img/VelkommenA.jpg" alt="Bilde av en skål!" />
+
+      <di>
+        <input
+          
+          
+          
+          placeholder="Fornavn"
+          required
+          name="Name"
+        />
+      </div>
+      <div>
+        <p class="input-Etternavn">
+          <input
+            class="input-Etternavn"
+            type="text"
+            placeholder="Etternavn"
+            required
+            name="Etternavn"
+          />
+        </p>
+      </div>
+
+      <div>
+        <select name="Antall">
+          <option value="1">1 person</option>
+          <option value="2">2 personer </option>
+          <option value="3">3 personer</option>
+          <option value="4">4 personer</option>
+          <option value="5">5 personer</option>
+          <option value="6">6 personer</option>
+          <option value="7">7 personer</option>
+          <option value="8">8 personer</option>
+          <option value="9">9 personer</option>
+          <option value="10">10 personer</option>
+          <option value="">10+ </option>
+        </select>
+      </div>
+
+      <div>
+        <p class="input-dato">
+          <input
+            class="input-dato"
+            type="date"
+            value="2022-12-04"
+            placeholder="Tid og dato"
+            required
+            name="date"
+          />
+        </p>
+      </div>
+
+      <div class="velg_dag">
+        <select name="tidspunkt">
+          <option value="tidspunkt">Velg tidspunkt</option>
+          <option value="10">10:00</option>
+          <option value="11">11:00</option>
+          <option value="12">12:00</option>
+          <option value="13">13:00</option>
+          <option value="14">14:00</option>
+          <option value="15">15:00</option>
+          <option value="16">16:00</option>
+          <option value="17">17:00</option>
+          <option value="18">18:00</option>
+          <option value="19">19:00</option>
+          <option value="20">20:00</option>
+          <option value="21">21:00</option>
+        </select>
+      </div>
+
+      <div>
+        <p>
+          <input
+            type="tel"
+            name="telefonnr"
+            id="telefonnr"
+            placeholder="Telefonnr"
+            required
+          />
+        </p>
+      </div>
+
+      <div>
+        <p>
+          <input
+            type="email"
+            name="name"
+            id="email"
+            placeholder="E-post"
+            required
+          />
+        </p>
+      </div>
+
+      <div>
+        <p class="input-kommentar">
+          <input
+            class="input-kommentar"
+            type="text"
+            placeholder="Kommentarer"
+            required
+            name="Kommentar"
+          />
+        </p>
+      </div>
+
+      <div>
+        <p class="button">
+          <button
+            class="button"
+            onclick="alert('Forespørselen er sendt!')"
+            type="submit"
+          >
+            Send forespørsel
+          </button>
+          <button class="button" type="reset">Nullstill</button>
+        </p>
+      </div>
+      
+</div>
+    </div>
+  </body>
+

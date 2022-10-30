@@ -1,0 +1,20 @@
+.header{
+    width: 100%;
+    background-color: rgb(75, 177, 255);
+    text-align: center;
+    top: 0;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+}
+
+.header a{
+    color: #101010;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 40px;
+}
+
+.header a:hover{
+    color: #767676;
+}

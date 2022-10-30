@@ -1,0 +1,43 @@
+/* 
+    Alt i denne text.css gjeller for all tekst, memindre overskrevet.
+
+    Fonten er hentet fra https://fonts.google.com/specimen/Baloo+2?category=Display&preview.size=35 
+    koden er på W3schools; https://www.w3schools.com/cssref/pr_import_rule.php
+*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Arial';
+    background-color: rgb(164, 196, 255);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #003f45;
+}
+
+a{
+    height: auto;
+    color: #101010;
+    text-decoration: none;
+}
+
+div {
+    background-color: #D2DFEE;
+}
+
+dt{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    clear: both;
+}
+
+img {
+    float: left;
+    height: 100%;
+}
+
+

@@ -1,0 +1,15 @@
+
+
+.bookBox{
+    justify-content:center ;
+    padding-inline: 100px;
+    margin: auto;
+    padding: 10px 10px;
+    width: 450px;
+    height: 330px;
+    margin-top: 20px;
+}
+
+body{
+    background-image:url("../img/Resturant_bakgrunn.jpg");
+}
