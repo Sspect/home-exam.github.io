@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5, h6{
     margin: 0px;
 }
 
+h1 {
+    font-size: 20px;
+}
+
+
 a{
     height: auto;
     color: #101010;
@@ -25,9 +30,9 @@ a{
 
 
 .div-tema {
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 20px 20px 10px rgba(65, 65, 65, 0.7);
-    background-color: #D2DFEE;
+    background-color: #b4c9e1;
 }
 
 dt{
@@ -36,16 +41,25 @@ dt{
 }
 
 footer {
+    margin-top: 200px;
     clear: both;
 }
 
 img {
-    float: left;
+    
     height: 100%;
 }
 
 
 footer{
     text-align: center;
+}
+
+.profil-bilde{
+    float: right;
+    height: 150px;
+    margin: 20px;
+    border-radius: 100px;
+    border: #003f45 3px solid;
 }
 

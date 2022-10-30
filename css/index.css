@@ -1,35 +1,37 @@
+/* alle box- classer er for boksene på indeks.html */
 .boxImgLeft{
+    margin-right: 20px;
     float: left;
     height: 100%;
-    
 }
 
 .boxImgRight{
+    margin-left: 20px;
     float: right;
     height: 100%;
 }
 
-/*
-float: left;
-
-*/
-
-.boxRight{
+.box-right{
     float: right;
     clear: both;
-    height: 600px;
-    width: 1500px;
-    margin-bottom: 200px;
-    margin-right: 30px;
-    
+    height: 400px;
+    width: 1000px;
+    margin-top: 100px;
+    margin-right: 20px;   
 }
-.boxLeft{
+
+.box-left{
     float: left;
     clear: both;
-    height: 600px;
-    width: 1500px;
+    height: 400px;
+    width: 1000px;
+    margin-top: 100px;
+    margin-right: 20px;   
+}
+
+/* vi må finne et bedre alternativ! */
+.bok-nederst{
     margin-bottom: 200px;
-    margin-left: 30px;
 }
 
 
