@@ -20,7 +20,7 @@
 </head>
 <body>
   <!-- Header -->
-  <div class="header">
+  <div class="header ">
     <a href="index.html">Welcome</a>
     <a href="booking.html">Booking</a>
     <a href="meny.html">Meny</a>
@@ -43,130 +43,46 @@
     </p>
   </div>
   
-        
+  <!--
+    <img src="img/VelkommenA.jpg" alt="Bilde av en skål!" />
+  -->      
       
-<div class="bookBox">
-  <img src="img/VelkommenA.jpg" alt="Bilde av en skål!" />
+<div class="book-boks div-tema">
+  <h2>Book Bord</h2>
+  
+  <div class="input-boks">
+    <input type="Username" required name="fname">
+    <label>Fornavn</label>
+  </div>
 
-      <di>
-        <input
-          
-          
-          
-          placeholder="Fornavn"
-          required
-          name="Name"
-        />
-      </div>
-      <div>
-        <p class="input-Etternavn">
-          <input
-            class="input-Etternavn"
-            type="text"
-            placeholder="Etternavn"
-            required
-            name="Etternavn"
-          />
-        </p>
-      </div>
+  <div class="input-boks">
+    <input type="text" required name="lname">
+    <label>Etternavn</label>
+  </div>
+  <div class="input-boks">
+    <input type="tel" required>
+    <label>Telefon.nr</label>
+  </div>
 
-      <div>
-        <select name="Antall">
-          <option value="1">1 person</option>
-          <option value="2">2 personer </option>
-          <option value="3">3 personer</option>
-          <option value="4">4 personer</option>
-          <option value="5">5 personer</option>
-          <option value="6">6 personer</option>
-          <option value="7">7 personer</option>
-          <option value="8">8 personer</option>
-          <option value="9">9 personer</option>
-          <option value="10">10 personer</option>
-          <option value="">10+ </option>
-        </select>
-      </div>
-
-      <div>
-        <p class="input-dato">
-          <input
-            class="input-dato"
-            type="date"
-            value="2022-12-04"
-            placeholder="Tid og dato"
-            required
-            name="date"
-          />
-        </p>
-      </div>
-
-      <div class="velg_dag">
-        <select name="tidspunkt">
-          <option value="tidspunkt">Velg tidspunkt</option>
-          <option value="10">10:00</option>
-          <option value="11">11:00</option>
-          <option value="12">12:00</option>
-          <option value="13">13:00</option>
-          <option value="14">14:00</option>
-          <option value="15">15:00</option>
-          <option value="16">16:00</option>
-          <option value="17">17:00</option>
-          <option value="18">18:00</option>
-          <option value="19">19:00</option>
-          <option value="20">20:00</option>
-          <option value="21">21:00</option>
-        </select>
-      </div>
-
-      <div>
-        <p>
-          <input
-            type="tel"
-            name="telefonnr"
-            id="telefonnr"
-            placeholder="Telefonnr"
-            required
-          />
-        </p>
-      </div>
-
-      <div>
-        <p>
-          <input
-            type="email"
-            name="name"
-            id="email"
-            placeholder="E-post"
-            required
-          />
-        </p>
-      </div>
-
-      <div>
-        <p class="input-kommentar">
-          <input
-            class="input-kommentar"
-            type="text"
-            placeholder="Kommentarer"
-            required
-            name="Kommentar"
-          />
-        </p>
-      </div>
-
-      <div>
-        <p class="button">
-          <button
-            class="button"
-            onclick="alert('Forespørselen er sendt!')"
-            type="submit"
-          >
-            Send forespørsel
-          </button>
-          <button class="button" type="reset">Nullstill</button>
-        </p>
-      </div>
-      
+  <div class="input-boks">
+    <select name="Antall">
+      <option value="1">1 person</option>
+      <option value="2">2 personer </option>
+      <option value="3">3 personer</option>
+      <option value="4">4 personer</option>
+      <option value="5">5 personer</option>
+      <option value="6">6 personer</option>
+      <option value="7">7 personer</option>
+      <option value="8">8 personer</option>
+      <option value="9">9 personer</option>
+      <option value="10">10 personer</option>
+      <option value="11">Mer enn 10</option>
+    </select>
+  </div>
+  <button class="button" onclick="alert('Forespørselen er sendt!')" type="submit">
+    Send forespørsel
+  </button>
 </div>
-    </div>
+
   </body>
 

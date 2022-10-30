@@ -9,11 +9,12 @@
 body{
     margin: 0px;
     font-family: 'Arial';
-    background-color: rgb(164, 196, 255);
+    background-image: url(../img/white.png);
 }
 
 h1, h2, h3, h4, h5, h6{
     color: #003f45;
+    margin: 0px;
 }
 
 a{
@@ -22,7 +23,10 @@ a{
     text-decoration: none;
 }
 
-div {
+
+.div-tema {
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px rgba(65, 65, 65, 0.7);
     background-color: #D2DFEE;
 }
 
@@ -40,4 +44,8 @@ img {
     height: 100%;
 }
 
+
+footer{
+    text-align: center;
+}
 
