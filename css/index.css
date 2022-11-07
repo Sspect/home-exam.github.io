@@ -1,45 +1,78 @@
-
-
-
-
-
-
-
+.parent{
+    width: 890px;
+    margin: auto;
+}
 /* alle box- classer er for boksene på indeks.html */
-.boxImgLeft{
-    margin-right: 20px;
-    float: left;
-    height: 100%;
-}
 
-.boxImgRight{
-    margin-left: 20px;
-    float: right;
-    height: 100%;
-}
 
 .box-right{
-    float: right;
+    display: inline-block;
+    /* float: right; */
     clear: both;
     height: 400px;
     width: 1000px;
     margin-top: 100px;
-    margin-right: 20px;   
+    margin-right: 20px;  
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+.boksTekst h1{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
+#bookingBoks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../img/bord.jpg");
+}
+#menyBoks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../img/food.png");
+}
+
+
 .box-left{
-    float: left;
+    display: inline-block;
+    /* float: left; */
     clear: both;
     height: 400px;
     width: 1000px;
     margin-top: 100px;
-    margin-right: 20px;   
+    margin-right: 20px; 
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
 }
+#accessibilityBoks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../img/food.png");
+}
+#topicalBoks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../img/phone.jpg");
+}
+
+
+
+
+
+
+
 
 /* vi må finne et bedre alternativ! */
 .bok-nederst{
     margin-bottom: 200px;
 }
-
 
 

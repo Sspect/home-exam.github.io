@@ -19,103 +19,76 @@
   </head>
   <body>
     <!--Header-->
-    <div class="bildeBakgrunn">
-      <div class="header">
-        <a href="index.html">Welcome</a>
-        <a href="booking.html">Booking</a>
-        <a href="meny.html">Meny</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topical-page.html">Topical Page</a>
-          <div class="bildeTekst">
-            <h1>Stanley <br> Restaurant & Catering</h1>
-          </div>
+    <header>
+      <div class="bildeBakgrunn">
+        <div class="header">
+          <a href="index.html">Welcome</a>
+          <a href="booking.html">Booking</a>
+          <a href="meny.html">Meny</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="topical-page.html">Topical Page</a>
+          <a href="menytest.html">test meny </a>
+            <div class="bildeTekst">
+              <h1>Stanley <br> Restaurant & Catering</h1>
+            </div>
+        </div>
       </div>
-    </div>
+    </header>
 
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191</button>
     <!--Welkommen boks-->
-    <div class="welkommen">
-      <h1 id="h1Welkommen">Velkommen til Stanley Restaurant & Catering</h1>
+    <div class="div-tema2">
+      <h1>Velkommen til Stanley Restaurant & Catering</h1>
+      
+      
       <p>
-        Stanley Restaurant og Catering har et variert tilbud alt fra vegetarfajitas 
-        fra Sør-Amerika til vår kjente Torskefilet fra Lofoten. 
-        Restauranten er plassert midt i Porsgrunn sentrum og har plass til 100 gjester.
-        Stanley Restaurant har dominert i over 10 år, og vi satser på kvalitet og komfort for kundene våre.
+        Stanley Restaurant og Catering er en resturant og catering bedrift. 
+        Restauranten er plassert midt i Porsgrunn sentrum, med romslig lokale og et bredt uvalg av aktiviteter. 
+        Vi i Stanley Restaurant og Catering satser på kvalitet, komfort og en god opplevelse for kundene våre.
+        <strong>Velkommen!</strong>
       </p>
-      <!-- Linda Stanley -->
-      <h1 class="OmOssTekst">Linda Stanley</h1>
+      
     </div>
 
 
-
+  <div class="parent"><!-- div for å holde boksene sentrert -->
     <!-- Booking boks -->
     <a href="booking.html">
-      <div class="box-right div-tema">
-        <img class="boxImgRight" src="img/bord.jpg" alt="Bilde av en restaurant">
-        <h1>Book Bord</h1>
+      <div class="box-right div-tema" id="bookingBoks">
+        <div class="boksTekst">
+          <h1>Book bord eller lokale</h1>
+        </div>
       </div>  
     </a>
 
     <!-- Meny box -->
     <a href="meny.html">
-      <div class="box-left div-tema">
-        <img class="boxImgLeft" src="img/food.png" alt="Bilde av diversje matretter">
-        <h1 >Meny</h1>
+      <div class="box-left div-tema" id="menyBoks">
+        <div class="boksTekst">
+          <h1>Meny</h1>
+        </div>
       </div>
     </a>
 
     <!-- Accessibility boks -->
     <a href="accessibility.html">
-      <div class="box-right div-tema">
-        <img class="boxImgRight" src="img/code.png" alt="Bilde av data code">
-        <h1>Accessibility page</h1>
+      <div class="box-right div-tema" id="accessibilityBoks">
+        <div class="boksTekst">
+          <h1>Accessibility page</h1>
+        </div>
       </div>
     </a>
 
     <!-- Topical page boks -->
     <a href="topical-page.html">
-      <div class="box-left div-tema">
-        <img class="boxImgLeft" src="img/phone.jpg" alt="Bilde av en hond som holdert en iphone">
-        <h1 >Topical page</h1>
+      <div class="box-left div-tema" id="topicalBoks">
+        <div class="boksTekst">
+          <h1 >Topical page</h1>
+        </div>
       </div>
     </a>
+  </div>
 
-
-    
-    <div class="box-right div-tema bok-nederst"> 
-      <img class="boxImgRight" src="img/resturanteBilde.jpg" alt="Bilde av en restaurant" >
-            <h1 class="OmOssTekst">Velkommen til Stanley Restaurant og Catering</h1>
-          <p>
-            Stanley Restaurant og Catering har et variert tilbud alt fra vegetarfajitas 
-            fra Sør-Amerika til vår kjente Torskefilet fra Lofoten. 
-            Restauranten er plassert midt i Porsgrunn sentrum og har plass til over 130 gjester.
-            Stanley Restaurant har dominert i over 10 år, og vi satser på kvalitet og komfort for kundene våre.
-          </p>
-
-
-          <!-- Linda Stanley -->
-          <h1 class="OmOssTekst">Linda Stanley</h1>
-          <img class="profil-bilde" src="img/Linda stanley.png" alt="Bilde av Linda Stanley">
-          <p>
-            Linda Stanley er eier av Stanley Restaurant. Hun har vært i resturant bransjen siden hun var liten.  
-            Linda er en energisk sjef med et godt humør. Hun har holdt koken lenge og enda lenger skal det bli. 
-            Før pandemien var hun på en verdensreise for å få nye inspill til menyen vår.
-            Menyen strekker seg fra Mexico til Lofoten. 
-            Det gjør at resturanten har et bredt utvalg av internsasjonale smaker og gir deg som kunde
-            forhåpentligvis en god opplevelse hos oss! 
-          </p>
-
-
-          <!-- Kai Tore Olafsen -->
-          <h1 class="OmOssTekst">Kai Tore Olafsen</h1>
-          <img class="profil-bilde" src="img/kai tore olafsen.png" alt="Bilde av Kai Tore Olafsen">
-          <p>
-            Kai er vår ledene kokk, som har over 25 år med erfaring i restaurant bransjen. 
-            Han er opprinnelig fra Harstad, men har jobbet i både USA og Mexico 
-            og tar med seg smakene sine tilbake til Norge. 
-            Stanley Restaurant har et godt team som jobber for at opplevelsen til kundene skal være fantastisk.
-          </p>
-    </div>
     
     <footer>
       <h2 id="Åpningstider">Åpningstider</h2>
@@ -124,15 +97,6 @@
         <p><strong>Fredag til Lørdag:</strong>  11:00 - 23:00 (22:00)</p>
         <p><strong>Søndag:</strong>12:00- 20:00 (19:00)</p>
         <p>(Kjøkkenet stenger)</p>
-      </fieldset>
-      <br>
-
-      <h2 id="Om_oss"> Om oss</h2>
-      <fieldset>
-        <p><b>Bedrift:</b> Stanley Resturant & Catering</p>
-        <p><strong>Størrelse:</strong> 145 kvadratmeter</p>
-        <p><strong>Kapasitet:</strong> 100 stk </p>
-        <p>Velkommen til Stanley Resturant & Catering</p>
       </fieldset>
       <br>
     
@@ -149,4 +113,25 @@
         <a href="https://www.google.com/maps/place/Storgata+13,+3921+Porsgrunn/@59.1381894,9.6422491,17z/data=!3m1!4b1!4m5!3m4!1s0x4647206d23140875:0x5b70fbfe3c2cd2df!8m2!3d59.1381867!4d9.6444431" target="_blank">Se kart her</a> 
       </fieldset>
     </footer>
+    <script>
+      // Get the button
+let mybutton = document.getElementById("myBtn");
+	
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+    </script>
 </html>

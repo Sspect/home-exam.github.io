@@ -7,6 +7,7 @@
   information mentioned in the first sentence here should be easy to find.
 -->
 
+
 <head>
   <meta charset="UTF-8" />
 
@@ -17,29 +18,22 @@
 
   <title>Booking</title>
 </head>
-
 <body>
-  <!--Header-->
-  <header>
-    <div class="bildeBakgrunn">
-      <div class="header">
-        <a href="index.html">Welcome</a>
-        <a href="booking.html">Booking</a>
-        <a href="meny.html">Meny</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topical-page.html">Topical Page</a>
-        <a href="menytest.html">test meny </a>
-          <div class="bildeTekst">
-            <h1>Booking<br><br></h1>
-          </div>
-          <div class="bokkDiv">
-            <a href="#divBokkBord"><Button class="bokkKnapp" id="bokkBordKnapp">Bord</Button></a>
-            <a href="#divBokkLokale"><Button class="bokkKnapp" id="bokkLokaleKnapp">Lokale</Button></a>
-          </div>
-      </div>
-    </div>
-  </header>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191</button>
+  <!-- Header -->
+  <div class="header ">
+    <a href="index.html">Welcome</a>
+    <a href="booking.html">Booking</a>
+    <a href="meny.html">Meny</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="topical-page.html">Topical Page</a>
+  </div>
+
+  <div >
+    <h1>Booking</h1>
+  
+    <Button id="bokkBordKnapp">Book bord</Button>
+    <Button id="bokkLokaleKnapp">Book lokale</Button>
+    <div class = "Valg-av-bord-lokale"> 
   
  <!-- <img src="img/VelkommenA.jpg" alt="Bilde av en skål!" />>
     -->
@@ -78,7 +72,7 @@
     </select>
   </div>
   <div class="input-boks">
-    <input type="text" required>
+    <input type="text">
     <label>Kommentarer</label>
   </div>
   
@@ -87,8 +81,10 @@
   </button>
 </div>
 
+<br>
+<br>
 
-
+<div>
 
 <div class="book-boks div-tema" id="divBokkLokale">
   <h2>Book lokale</h2>
@@ -111,7 +107,7 @@
   <div class="input-boks">
     <select name="Type aragnsement">
       <option value="1">Bryllup </option>
-      <option value="2">Konfirmasjon </option>
+      <option value="2">Konfermasjon </option>
       <option value="3">Minnesamvær</option>
       <option value="4">Julebord</option>
       <option value="5">Selskapsfest</option>
@@ -120,10 +116,15 @@
       <option value="8">Annet (spesifiser i kommentarfeltet)</option>
     </select>
   </div>
+  <div class="input-boks">
+    <input type="text">
+    <label> Kommentarer</label>
+
+  </div>
 
   <div class = "input-boks">
-    <input type="number" min="10" max ="150" step ="5" required>
-    <label >Antall (ca)</label>
+    <input type="number" min="10" max ="150" step ="5">
+    <label >Antall</label>
   </div>
   <div class="input-boks">
     <input type="text" required>
@@ -131,13 +132,7 @@
   </div>
 
 
-  <button class="button" onclick="alert('Forespørselen er sendt!')" type="submit">
-  Send forespørsel
-  </button>
-</div>
-
 <script>
-    var bokkLokaleKnapp = document.querySelector("#bokkLokaleKnapp");
     var bokkBord = document.querySelector("#divBokkBord");
     var bokkLokale = document.querySelector("#divBokkLokale");
     var bokkBordKnapp = document.querySelector("#bokkBordKnapp");
@@ -152,29 +147,7 @@
         bokkLokale.style.display= "block";
         bokkBord.style.display= "none";
     }
-
-    // Get the button
-let mybutton = document.getElementById("myBtn");
-	
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
   </script>
-</body>
-</html>
 
-  
+  </body>
 
