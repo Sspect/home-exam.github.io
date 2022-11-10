@@ -10,7 +10,7 @@
 body{
     margin: 0px;
     font-family: 'Arial';
-    background-image: url();
+    background-color: #101010;
 }
 
     /* custom scrollbar */
@@ -44,7 +44,7 @@ h1 {
 }
 
 p {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 
