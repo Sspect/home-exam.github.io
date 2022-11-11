@@ -63,12 +63,6 @@ a :hover{
 }
 
 
-dt{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
 footer {
     margin-top: 200px;
     clear: both;
@@ -92,7 +86,7 @@ img {
 .div-tema {
     border-radius: 0px;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
-    background-color: #b4c9e1;
+    background-color: #8a8a8a;
 }
 
 /* Velkommen diven under headeren */
@@ -102,21 +96,12 @@ img {
     padding-bottom: 40px;
 }
 
-/* sentrerer teksten */         /*  .h1Welkommen */
+/* sentrerer teksten */         /*  Welkommen */
 .div-tema2 p, .div-tema2 h1 {
     color: white;
     text-align: center;
 }
-
-/*
-color: rgb(255, 255, 255);
-
-    padding: 40px 100px 100px 0px;
-    margin: 0% 38% 0% 38%;
-
-*/
 .div-tema2 h1{
-    text-align: center;
     border-bottom: solid 5px white;
 }
 
@@ -129,8 +114,8 @@ color: rgb(255, 255, 255);
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(196, 125, 125);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;

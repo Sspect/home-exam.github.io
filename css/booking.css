@@ -9,9 +9,6 @@
 .book-boks{
     display: block;
     margin: 30px auto 30px auto;
-    /*
-    background-image: url(../img/beanstalk-dark.jpg);
-    */
     width: 400px;
     padding: 40px;
     box-sizing: border-box;

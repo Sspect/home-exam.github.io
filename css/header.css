@@ -72,5 +72,7 @@ Logo
  */
 
 .logo{
-    height: fit-content
+    height: 100px;
+    float: left;
+    position: initial;
 }
