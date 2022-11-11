@@ -9,7 +9,7 @@
 /* https://www.w3schools.com/tags/tag_dt.asp */
 
 
-.menyImg{
+.meny Img{
     float: right;
     width:  300px;
     height: 330px;
@@ -19,35 +19,23 @@
 .lunsjer1{
     text-align: center;
 }
-.menytittel{
-    text-transform: capitalize;
-    font-size: 35px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
+#undertittel{
+  text-align: center;
+  border-bottom: 10px;
+  border-bottom: coral;
 }
-.menys {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-.meny-column {
-    width: 31%;
-  }
-  .single-menu {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-  }
-  .single-menu .menu-content h5 {
-    text-transform: capitalize;
-    font-size: 22px;
-    font-weight: 500;
-    border-bottom: 1px dashed #222;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
+.meny{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.meny-del{
+width: 31%;
+}
+.meny-endel{
+  align-items: center;
+  margin: 20px;
+}
 
 
 /*

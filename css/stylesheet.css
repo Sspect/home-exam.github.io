@@ -10,7 +10,7 @@
 body{
     margin: 0px;
     font-family: 'Arial';
-    background-color: #101010;
+    background-color: rgb(59, 59, 59);
 }
 
     /* custom scrollbar */
@@ -31,9 +31,10 @@ body{
     }
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #b30000; 
+        background: rgb(36, 36, 36); 
     }
     /* /custom scrollbar */
+    
 h1, h2, h3, h4, h5, h6{
     color: rgb(255, 255, 255);
     margin: 0px;
@@ -54,7 +55,7 @@ a{
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
-    color: rgb(4, 0, 255);
+    color: rgb(58, 58, 255);
 }
 a :hover{
     color: #767676;
@@ -65,21 +66,18 @@ a :hover{
 dt{
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 footer {
     margin-top: 200px;
     clear: both;
+    text-align: center;
 }
 
 img {
     
     height: 100%;
-}
-
-
-footer{
-    text-align: center;
 }
 
 .profil-bilde{
@@ -90,17 +88,15 @@ footer{
     border: #003f45 3px solid;
 }
 
-/*  */
 
 .div-tema {
-    border-radius: 5px;
-    box-shadow: 20px 20px 10px rgba(124, 124, 124, 0.7);
+    border-radius: 0px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
     background-color: #b4c9e1;
 }
 
 /* Velkommen diven under headeren */
 .div-tema2{
-    background-color: #101010;
     width: 100%; 
     box-shadow: 0px -80px 80px rgba(0, 0, 0, 0.781);
     padding-bottom: 40px;
@@ -139,7 +135,6 @@ color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 4px;
   }
-  
   #myBtn:hover {
     background-color: #555;
   }

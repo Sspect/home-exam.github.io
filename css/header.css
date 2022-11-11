@@ -56,13 +56,21 @@
     color: rgb(255, 255, 255);
     text-align: center;
     cursor: pointer;
-  }
-  .bokkDiv{
+}
+  
+.bokkDiv{
     position: relative;
     top: 500px;
     width: 400px;
     margin: auto;
-  }
-  #ingridienser{
+}
+#ingridienser{
     font-size: 20px;
-  }
+}
+/*
+Logo
+ */
+
+.logo{
+    height: fit-content
+}
