@@ -5,6 +5,34 @@
 #divBokkLokale{
     display: none;
 }
+.h2bookinginfo{
+    margin: auto;
+    width: 875px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+.infodiv{
+    margin: auto;
+    width: 850px;
+    padding: 10px;
+    /*background-color: rgb(187, 115, 22);*/
+    display: flex;
+    align-items: center;
+}
+.infodiv img{
+    position: relative;
+    right: 0px;
+}
+/* teksten inne i infodiv */
+.bookingInfo{
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid white ;
+    text-align: left;
+    width: 420px;
+    
+}
 
 .book-boks{
     display: block;

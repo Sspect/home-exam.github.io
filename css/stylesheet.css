@@ -7,6 +7,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
+/* smooth scroll animassjon for hele websiden */
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     font-family: 'Arial';
@@ -64,9 +68,14 @@ a :hover{
 
 
 footer {
+    padding-top: 10px;
     margin-top: 200px;
     clear: both;
     text-align: center;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 img {
@@ -123,3 +132,19 @@ img {
   #myBtn:hover {
     background-color: #555;
   }
+  .kolonnefooter{
+    width: 48%;
+  }
+  .kontakt{
+    margin-left: 50%;
+  }
+  .kontakt p{
+    text-align: left;
+  }
+  .åpning{
+    margin-right: 50%;
+  }
+  .åpning p{
+    text-align: left;
+  }
+  

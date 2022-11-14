@@ -54,8 +54,29 @@
 }
 #topicalBoks{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url("../img/phone.jpg");
+    url("../img/telefon.jpg");
 }
 
 
 
+
+  section{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innpakning{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
