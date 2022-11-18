@@ -1,8 +1,25 @@
-.kolonne1{
-    width: 50%;
-    
+.topicalinnhold{
+    margin: auto;
+    width: 1000px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+     text-align: left;
+    background-color: gray;
+    padding: 10px;
+    height: 700px;
 }
-.kolonne1 img{
-    width: 300px;
+.topicalinnhold p{
+   margin: 10px
+}
+.topicalinnhold img{
+    height: 700px;
     float: right;
+}
+.overskrift{
+    text-align: center;
+    padding-top: 20px;
+
+
 }

@@ -1,24 +1,52 @@
-.menyKontainer{
-  width: 1500px;
+.menyOverskriftDiv{
+  border: 5px #000000 solid;
+  color: #ffffff;
+  width: 90%;
   margin: auto;
 }
-
+.menyOverskrift{
+  color: #0029f4;
+  text-align: center;
+}
+.menyKontainer{
+  display: flex;
+  border: 5px #f40000 solid;
+  margin: auto;
+}
+.kolonne{
+  width: 475px;
+  border: 5px rgb(0, 247, 255) solid;
+  margin: auto;
+}
+.menyRett{
+  border: 5px greenyellow solid;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 .menyBilde{
   height: 100px;
   border-radius: 60px;
-  border: 5px solid #ffffff;
-}
-.rad{
-  background-color: #454545;
+  border: 2px solid #ffffff;
+  margin-right: 10px;
 }
 
-.kolonne{
-  float: left;
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-  width: 33.33%;
+.menyRettTekst{
+  border: 5px #0029f4 solid;
+  width: 250px;
 }
+.menyRettTekst h1{
+  border-bottom: 3px white solid;
+  float: left;
+}
+.pris{
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  color: #f40000;
+}
+
+
 
 
 

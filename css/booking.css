@@ -7,14 +7,15 @@
 }
 .h2bookinginfo{
     margin: auto;
-    width: 875px;
+    width: 550px;
     padding: 10px;
     align-items: center;
+    text-align: center;
     display: flex;
 }
 .infodiv{
     margin: auto;
-    width: 850px;
+    width: 1100px;
     padding: 10px;
     /*background-color: rgb(187, 115, 22);*/
     display: flex;
@@ -23,15 +24,15 @@
 .infodiv img{
     position: relative;
     right: 0px;
+    height: 500px;
 }
 /* teksten inne i infodiv */
 .bookingInfo{
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid white ;
+    padding: 10px;
+   background-color: rgb(70, 70, 70);
     text-align: left;
-    width: 420px;
-    
+    width: 550px;
+    height: 480px;
 }
 
 .book-boks{

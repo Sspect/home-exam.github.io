@@ -26,12 +26,13 @@
     position: relative;
     top: 75px;
     line-height: 75px;
+    height: 225;
 }
 /* angir heaseren */
 .header{
     width: 100%;
     text-align: center;
-    padding: 70px 0px 50px 0px;
+    padding: 90px 0px 50px 0px;
     margin-bottom: 30px;
 }
 /* angir utsende p[ linkene til de andre sidene */
@@ -64,15 +65,17 @@
     width: 400px;
     margin: auto;
 }
-#ingridienser{
+.ingridienser{
     font-size: 20px;
+    margin: 0px;
+    padding: 0px;
 }
-/*
-Logo
- */
 
 .logo{
     height: 100px;
     float: left;
-    position: initial;
+    position: relative;
+    top: -35px;
+    left: 70px;
+    
 }
