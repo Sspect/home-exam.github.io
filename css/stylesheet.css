@@ -14,7 +14,7 @@ html {
 body{
     margin: 0px;
     font-family: 'Arial';
-    background-color: rgb(59, 59, 59);
+    background-color: #3c3a3a;
 }
 
     /* custom scrollbar */
@@ -77,6 +77,9 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.kontakt, .åpning{
+    width: 400px;
+}
 
 img {
     
@@ -114,7 +117,7 @@ img {
     border-bottom: solid 5px white;
 }
 
-#myBtn {
+#topknapp {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -129,7 +132,7 @@ img {
     padding: 15px;
     border-radius: 4px;
   }
-  #myBtn:hover {
+  #topknapp:hover {
     background-color: #555;
   }
   .kolonnefooter{
@@ -148,3 +151,23 @@ img {
     text-align: left;
   }
   
+  section{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innpakning{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

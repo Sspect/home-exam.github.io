@@ -22,7 +22,7 @@
     <header>
       <div class="bildeBakgrunn">
         <div class="header">
-          <img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo">
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
           <a href="index.html">Welcome</a>
           <a href="booking.html">Booking</a>
           <a href="meny.html">Meny</a>
@@ -36,7 +36,7 @@
       </div>
     </header>
     <!-- knapp for å ta deg tilbake til topp av siden -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191</button>
+    <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
     
 
 
@@ -129,15 +129,15 @@
    <!-- script for knappen som tar deg til toppen av siden -->
   <script>
       // henter knappen 
-      var mybutton = document.getElementById("myBtn");
+      var topknapp = document.querySelector("#topknapp");
       // når brukeren scroller ned 20 px fra toppen av siden vises knappen
       window.onscroll = function() {scrollFunction()};
       //funksjon for vise knappen eller ikke
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
+          topknapp.style.display = "block";
         } else {
-          mybutton.style.display = "none";
+          topknapp.style.display = "none";
         }
       }
       // når brukeren clicker på knappen, kommer brukeren til toppen av sden
@@ -148,23 +148,29 @@
 
 
 
-
-
+        // kode fra https://alvarotrigo.com/blog/css-animations-scroll/
+        //funksjonen som viser footeren
       function reveal() {
         var reveals = document.querySelectorAll(".reveal");
 
         for (var i = 0; i < reveals.length; i++) {
+          //Window innerHeight-egenskapen brukes til å returnere høyden på et vindus innholdsområde
+          //returnerer et tall som representerer høyden på nettleservinduets innholdsområde i piksler.
           var windowHeight = window.innerHeight;
+          //returner størrelsen på et element og elements posisjon i forhold til skjermen
           var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 75;
+          //elementet er synlig etter 150 px;
+          var visning = 150;
 
-          if (elementTop < windowHeight - elementVisible) {
+          //if setning for å vise eller skule footeren 
+          if (elementTop < windowHeight - visning) {
             reveals[i].classList.add("active");
           } else {
             reveals[i].classList.remove("active");
           }
         }
       }
+      //starter funksjonen
       window.addEventListener("scroll", reveal);
   </script>
 </html>

@@ -23,7 +23,7 @@
   <header>
     <div class="bildeBakgrunn">
       <div class="header">
-        <img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
         <a href="index.html">Welcome</a>
         <a href="booking.html">Booking</a>
         <a href="meny.html">Meny</a>
@@ -41,7 +41,7 @@
     </div>
   </header>
      <!-- knapp for å ta deg tilbake til topp av siden -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191</button>
+  <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
   <!-- div med info -->
   <!-- A short text that explains what the place is about, how big it is, how many people may be seated 
   there, where in the city it is located, and how to make a reservation. Please have some text that is 
@@ -143,9 +143,10 @@
       <option value="3">Minnesamvær</option>
       <option value="4">Julebord</option>
       <option value="5">Selskapsfest</option>
-      <option value="6">Møteplass</option>
-      <option value="7">Nyttårsfest</option>
-      <option value="8">Annet (spesifiser i kommentarfeltet)</option>
+      <option value="6">Bursdag</option>
+      <option value="7">Møteplass</option>
+      <option value="8">Nyttårsfest</option>
+      <option value="9">Annet (spesifiser i kommentarfeltet)</option>
     </select>
   </div>
 
@@ -163,33 +164,94 @@
   Send forespørsel
   </button>
 </div>
+
+<div class="bilde_slide">
+  <div class="minSlide_fade">
+    <div class="nummertekst">1/4</div>
+    <img src="img/bokking_bakgrunn/bokking_bryllup.png" alt="Brylup" width="400px">
+    <div class="bildetekst">Bilde tekst1</div>
+  </div>
+
+  <div class="minSlide_fade">
+    <div class="nummertekst">2/4</div>
+    <img src="img/bokking_bakgrunn/bokking_julebord.png" alt="Julebord" width="400px"
+    <div class="bildetekst">Bilde tekst1</div>
+  </div>
+
+  <div class="minSlide_fade">
+    <div class="nummertekst">3/4</div>
+    <img src="img/bokking_bakgrunn/bokking_konf.png" alt="komfirmasjon" width="400px">
+    <div class="bildetekst">Bilde tekst1</div>
+  </div>
+
+  <div class="minSlide_fade">
+    <div class="nummertekst">4/4</div>
+    <img src="img/bokking_bakgrunn/bokking_bursdag.png" alt="Bursdag" width="400px">
+    <div class="bildetekst">Bilde tekst1</div>
+  </div>
+
+  <a class="tilbake" onclick = "plusSlide(-1)">&#10094</a>
+  <a class="neste" onclick="plusSlide(1)">&#10095</a>   
+    
+</div>
+<br>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+
   <!-- footer med Åpningstider og generell informasjon om resturangen -->
-  <footer>
-    <!-- Åpningstider -->
-    <div class="kolonnefooter">
-      <div class="kontakt">
-    <h2>Åpningstider</h2>
-      <p><strong> Mandag til Torsdag:</strong> 11:00 - 21:00 (20:00)</p>
-      <p><strong>Fredag til Lørdag:</strong>  11:00 - 23:00 (22:00)</p>
-      <p><strong>Søndag:</strong>12:00- 20:00 (19:00)</p>
-      <p>(Kjøkkenet stenger)</p>
+  <section>
+    <div class="innpakning reveal">
+      <div class="innhold">
+          <footer>
+            <!-- Åpningstider -->
+            <div class="kolonnefooter">
+              <div class="kontakt">
+            <h2>Åpningstider</h2>
+              <p><strong> Mandag til Torsdag:</strong> 11:00 - 21:00 (20:00)</p>
+              <p><strong>Fredag til Lørdag:</strong>  11:00 - 23:00 (22:00)</p>
+              <p><strong>Søndag:</strong>12:00- 20:00 (19:00)</p>
+              <p>(Kjøkkenet stenger)</p>
+              </div>
+            </div>
+            <!-- generell informasjon om resturangen -->
+            <div class="kolonnefooter">
+            <div class="åpning">
+            <h2>Kontakt oss</h2>
+              <p><strong>Mobil:</strong> <a href="35 55 66 77"> 35 55 66 77</a></p>
+            
+              <p><strong>E-mail:</strong> <a href="mailto:Kontakt_oss@stanley.no">Kontakt_oss@stanley.no</a></p>
+            
+              <p>
+                <b>Adresse</b>:
+                <a href="https://www.google.com/maps/place/Storgata+13,+3921+Porsgrunn/@59.1381894,9.6422491,17z/data=!3m1!4b1!4m5!3m4!1s0x4647206d23140875:0x5b70fbfe3c2cd2df!8m2!3d59.1381867!4d9.6444431">Storgata 13,
+                  3921 Porsgrunn</a> </p>
+                </div>
+            </div>
+          </footer>
       </div>
     </div>
-    <!-- generell informasjon om resturangen -->
-    <div class="kolonnefooter">
-    <div class="åpning">
-    <h2>Kontakt oss</h2>
-      <p><strong>Mobil:</strong> <a href="35 55 66 77"> 35 55 66 77</a></p>
-    
-      <p><strong>E-mail:</strong> <a href="mailto:Kontakt_oss@stanley.no">Kontakt_oss@stanley.no</a></p>
-    
-      <p>
-        <b>Adresse</b>:
-        <a href="https://www.google.com/maps/place/Storgata+13,+3921+Porsgrunn/@59.1381894,9.6422491,17z/data=!3m1!4b1!4m5!3m4!1s0x4647206d23140875:0x5b70fbfe3c2cd2df!8m2!3d59.1381867!4d9.6444431">Storgata 13,
-          3921 Porsgrunn</a> </p>
-        </div>
-    </div>
-  </footer>
+  </section>
 
 <script>
     var bokkLokaleKnapp = document.querySelector("#bokkLokaleKnapp");
@@ -208,25 +270,50 @@
         bokkBord.style.display= "none";
     }
 
-    // Get the button
-let mybutton = document.getElementById("myBtn");
-	
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+    // henter knappen 
+    var topknapp = document.querySelector("#topknapp");
+      // når brukeren scroller ned 20 px fra toppen av siden vises knappen
+      window.onscroll = function() {scrollFunction()};
+      //funksjon for vise knappen eller ikke
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          topknapp.style.display = "block";
+        } else {
+          topknapp.style.display = "none";
+        }
+      }
+      // når brukeren clicker på knappen, kommer brukeren til toppen av sden
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+
+
+      // kode fra https://alvarotrigo.com/blog/css-animations-scroll/
+        //funksjonen som viser footeren
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          //Window innerHeight-egenskapen brukes til å returnere høyden på et vindus innholdsområde
+          //returnerer et tall som representerer høyden på nettleservinduets innholdsområde i piksler.
+          var windowHeight = window.innerHeight;
+          //returner størrelsen på et element og elements posisjon i forhold til skjermen
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          //elementet er synlig etter 150 px;
+          var visning = 150;
+
+          //if setning for å vise eller skule footeren 
+          if (elementTop < windowHeight - visning) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      //starter funksjonen
+      window.addEventListener("scroll", reveal);
   </script>
 </body>
 </html>

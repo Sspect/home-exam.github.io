@@ -15,7 +15,7 @@
     <header>
       <div class="bildeBakgrunn">
         <div class="header">
-          <img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo">
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
           <a href="index.html">Welcome</a>
           <a href="booking.html">Booking</a>
           <a href="meny.html">Meny</a>
@@ -28,6 +28,9 @@
         </div>
       </div>
     </header>
+     <!-- knapp for å ta deg tilbake til topp av siden -->
+    <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
+
 
     <p>
       <strong>
@@ -41,6 +44,24 @@
         We shall read this text! While the content of your site is but a minor part of the assessment, this is 
         the text that we are certain to read. 
     </p>
-
+    <script>
+      // henter knappen 
+      var topknapp = document.querySelector("#topknapp");
+      // når brukeren scroller ned 20 px fra toppen av siden vises knappen
+      window.onscroll = function() {scrollFunction()};
+      //funksjon for vise knappen eller ikke
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          topknapp.style.display = "block";
+        } else {
+          topknapp.style.display = "none";
+        }
+      }
+      // når brukeren clicker på knappen, kommer brukeren til toppen av sden
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 </body>
 </html>
