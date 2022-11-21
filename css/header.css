@@ -1,7 +1,7 @@
 /* angir utsenede på headeren */
 /* setter bile som bakgrunn i headeren */
 .bildeBakgrunn{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(../img/Resturant_bakgrunn.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)) ,url(../img/Resturant_bakgrunn.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -64,12 +64,17 @@
     width: 600px;
     margin: auto;
 }
+.bokkDiv2{
+    text-align: center;
+    position: relative;
+    width: 570px;
+    margin: auto;
+}
 .ingridienser{
     font-size: 20px;
     margin: 0px;
     padding: 0px;
 }
-
 .logo{
     height: 100px;
     float: left;
@@ -77,5 +82,8 @@
     top: -35px;
     left: 70px;
     border-radius: 50%;
-    
+}
+#logo{
+    margin: 0px;
+    padding: 0px;
 }

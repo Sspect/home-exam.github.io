@@ -15,13 +15,12 @@
     <header>
       <div class="bildeBakgrunn">
         <div class="header">
-          <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+          <a id="logo" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
           <a href="index.html">Welcome</a>
           <a href="booking.html">Booking</a>
           <a href="meny.html">Meny</a>
           <a href="accessibility.html">Accessibility</a>
           <a href="topical_page.html">Topical Page</a>
-          <a href="menytest.html">test meny </a>
             <div class="bildeTekst">
               <h1>Topical <br> page</h1>
             </div>
@@ -32,20 +31,25 @@
      <!-- knapp for å ta deg tilbake til topp av siden -->
      <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
 
-    <div class="Bakgrunn">
+    <div class="bakgrunn">
       <h1 class="overskrift">1.1 The interplay between technology and society </h1>
       
       <div class="topicalinnhold">
           <p>
           In the video, Hanne Cecilie discusses how a mobile phone can be understood as a technical device, a social device, as well as a phenomenon that can tell us something about the values in a society. How can a mobile phone be understood through the lense of your field of study and what do you think are the social implications of it? (From module 1.1)
           <br>
-          <br>
+          </p>
+          <h2>UnderOverskrift</h2>
+          <p>
             Gjennom mobiltelefonen finnes det uendelig mange muligheter. Alt fra betaling gjennom et appsystem, til varslinger av nye albumer til din favoritt artist. Teknologien i mobiltelefonen har kommet et godt stykke siden den første mobiltelefoni-teknologien kom til verden på 1970-tallet (Øverby, 2022). 
             Mobiltelefonen har gjort samfunnet mere effektivt. Sett opp mot kollektivtransport har effektiviteten økt betraktelig. Fra tidligere måtte en betale med kontanter, kan en nå bestille billett på en applikasjon for deretter å gå på bussen. Tidligere måtte man vente i kø for å betale bussjåføren med kontanter. Dette har bidratt til å effektivisere kollektivtransporten, gjøre den mer attraktiv, og det er en mer sikker måte å betale på. 
             Primærbruken til en telefon har alltid vært å kunne kommunisere med andre. Gjennom teleforbindelse, tale- og tekstmeldinger. Siden mobilen ble håndholdt og mindre har mobilen blitt mer avansert gjennom årene. Sosiale medier har skapt vennskap digitalt, gjort det lettere å dokumentere og oppdatere til sine nærmeste gjennom plattformer som Facebook, Instagram, Snapchat, Twitter. osv. Det har bidratt til at befolkningen kan bli informert raskt og enkelt ved ulike hendelser, som ved naturkatastrofe, ulykker, vedlikehold og mer. Alt dette kan bli spredd gjennom sosiale medier og bidrar til å effektivisere samfunnet. 
             Teknologien bak mobiltelefonen er enrom. Gjennom de minste komponentene finnes de mest avanserte programvarene. En smarttelefon kan derfor også bli omtalt som en liten datamaskin. Programvaren som lages til en smarttelefon er til for å hjelpe brukeren og effektivisere opplevelsen av mobilen, samt for å beskytte brukeren mot ondsinnede koder og virus. Denne teknologien er under kontinuerlig utvikling og gjør derfor denne bransjen svært attraktiv på arbeidsmarkedet. 
           </p>
-          <img id="bilde" src="img/telefon.jpg" alt="">
+          <div class="topicalBilde">
+            <img id="bilde" src="img/telefon.jpg" alt="telefon">
+          </div>
+          
       </div>
     </div>
         <!-- her kan vi sette inn sliding images under diven -->
@@ -84,6 +88,7 @@
       </div>
     </section>
     <script>
+      //script for knappen som tar deg til toppen av siden 
       // henter knappen 
       var topknapp = document.querySelector("#topknapp");
       // når brukeren scroller ned 20 px fra toppen av siden vises knappen
@@ -110,17 +115,20 @@
         for (var i = 0; i < reveals.length; i++) {
           //Window innerHeight-egenskapen brukes til å returnere høyden på et vindus innholdsområde
           //returnerer et tall som representerer høyden på nettleservinduets innholdsområde i piksler.
-          var windowHeight = window.innerHeight;
+          var skjermHoyde = window.innerHeight;
           //returner størrelsen på et element og elements posisjon i forhold til skjermen
           var elementTop = reveals[i].getBoundingClientRect().top;
           //elementet er synlig etter 150 px;
           var visning = 150;
 
-          //if setning for å vise eller skule footeren 
-          if (elementTop < windowHeight - visning) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
+         //if setning for å vise eller skule footeren 
+         if (elementTop < skjermHoyde - visning) {
+            //legger till klassen aktiv
+            reveals[i].classList.add("aktiv");
+          } 
+          else {
+            //fjerner klassen aktiv
+            reveals[i].classList.remove("aktiv");
           }
         }
       }

@@ -20,34 +20,37 @@
     <header>
       <div class="bildeBakgrunn">
         <div class="header">
-          <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+          <a id="logo" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
           <a href="index.html">Welcome</a>
           <a href="booking.html">Booking</a>
           <a href="meny.html">Meny</a>
           <a href="accessibility.html">Accessibility</a>
           <a href="topical_page.html">Topical Page</a>
-          <a href="menytest.html">test meny </a>
             <div class="bildeTekst">
               <!-- <h1>MENY<p id="ingridienser">Inneholder melk:🥛, egg:🥚, gluten:🌾, fisk:🐟, nøtter:🥜</p></h1> -->
-              <h1>Meny <br><span class="ingridienser">Inneholder melk:🥛, egg:🥚, gluten:🌾, fisk:🐟, nøtter:🥜</span></h1>
+              <h1>Meny <br><br></h1>
             </div>
+          </div>
         </div>
+      </header>
+      <!-- knapp for å ta deg tilbake til topp av siden -->
+      <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
+      <!-- vi kan ha side retter som: french fries, dirty fries, onion rings -->
+      
+      <!-- shift + ctrl + A -->
+      <div class="ingridienser">
+      <pre>Melk:🥛      Egg:🥚      Gluten:🌾      Fisk:🐟      Nøtter:🥜      Ingen allergener:🚫</pre>
       </div>
-    </header>
-    <!-- knapp for å ta deg tilbake til topp av siden -->
-    <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
-    <!-- vi kan ha side retter som: french fries, dirty fries, onion rings -->
-    
-
-
-    <!--
-      Lunsjer
-    -->
-    <div class="menyOverskriftDiv">
+      
+      <!--
+        Lunsjer
+      -->
+      <div class="lunsj menyOverskriftDiv">
         <h1 class="menyOverskrift">
           Lunsjer
         </h1>
-    
+      </div>
+        
       <div class="menyKontainer">
         
         <!--kolonne-->
@@ -63,7 +66,7 @@
               <br>
               <!-- Alergier -->
               <p>
-                🥛  🥚  🌾
+                🥛 🥚 🌾
               </p>
               <p>
                 Kalkunskinke, majones, salat, ost, stekt egg, tomat og fries.
@@ -71,8 +74,7 @@
             </div>
           </div>
         
-        <!--Roastbiff Sandwich-->
-        
+         <!--Roastbiff Sandwich-->
         <div class="menyRett">
           <img class="menyBilde" src="img/1 til 1/meny2.jpg" alt="">
           <div class="menyRettTekst">
@@ -82,7 +84,7 @@
             <br>
               <!-- Alergier -->
             <p>
-              🥚  🌾  🥜
+              🌾 🥜
             </p>
             <p>
               Remulade, syltet rødløk, salt, majones, syltagurk og fries.
@@ -103,8 +105,10 @@
             </h1>
             <br>
             <!-- Alergier -->
-            <br>
-            <br>
+            <p>
+
+              🚫
+            </p>
             <p>
               Glutenfritt hamburgerbrød, stekt bacon, salat, tomat og majones.
             </p>
@@ -121,11 +125,12 @@
             <br>
             <!-- Alergier -->
             <p>
-              🥛  🥚  🌾
+              🥚 🌾
             </p>
             <p>
               Olivenolje, serveres med aioli.
             </p>
+          
           </div>
         </div>
         
@@ -138,16 +143,16 @@
           <img class="menyBilde" src="img/1 til 1/meny5.jpg" alt="">
           <div class="menyRettTekst">
             <h1>
-              Vegetarquesedilla  <b class="pris">159,-</b> 
-            </h1>
-            <br>
-            <!-- Alergier -->
-            <p>
-              🥛  🥚  🌾
-            </p>
-            <p>
-              Ristet grovt brød, most avokado, sitronjuice, mais, vårløk, tomat og kvernet pepper.
-            </p>
+            Vegetarquesedilla  <b class="pris">159,-</b> 
+          </h1>
+          <br>
+          <!-- Alergier -->
+          <p>
+            🥛 🌾
+          </p>
+          <p>
+            Ost, mais og edamamebønner. Serveres med guacamole og salsa
+          </p>
           </div>
         </div>
         
@@ -156,21 +161,284 @@
           <img class="menyBilde" src="img/1 til 1/meny6.jpg" alt="">
           <div class="menyRettTekst">
             <h1>
-              Avokdo Toast  <b class="pris">159,-</b> 
+              Avokado Toast  <b class="pris">159,-</b> 
             </h1>
             <br>
             <!-- Alergier -->
             <p>
-              🥛  🥚  🌾
+              🚫
             </p>
             <p>
-              Kalkunskinke, majones, salat, ost, stekt egg, tomat og fries.
+              Ristet grovt brød, most avokado, sitronjuice, mais, vårløk og tomat
             </p>
           </div>
         </div>
       </div>
     </div>
+  <div class="middag menyOverskriftDiv">
+    <h1 class="menyOverskrift">
+      Middager
+    </h1>
   </div>
+    
+  <div class="menyKontainer">
+    
+    <!--kolonne-->
+    <div class="kolonne">
+     
+       <!--Entrecôte-->
+      <div class="menyRett">
+        <img class="menyBilde" src="img/1 til 1/meny7.jpg" alt="">
+        <div class="menyRettTekst">
+          <h1>
+            Entrecôte   <b class="pris">159,-</b> 
+          </h1>
+          <br>
+          <!-- Alergier -->
+          <p>
+            🥛 🥚 🌾
+          </p>
+          <p>
+            Brokkoli, stekt potet og bearnaise
+          </p>
+          
+         
+        </div>
+      </div>
+    
+    <!--Indrefilet-->
+    
+    <div class="menyRett">
+      <img class="menyBilde" src="img/1 til 1/meny8.jpg" alt="">
+      <div class="menyRettTekst">
+        <h1>
+          Indrefilet  <b class="pris">199,-</b>
+        </h1>
+        <br>
+          <!-- Alergier -->
+        <p>
+          🥛 🥚 🌾 
+        </p>
+        <p>
+          Indrefilet av okse servers  med brokkoli, stekt potet og bearnaise
+        </p>
+      </div>
+    </div>
+    
+    
+  </div>
+  <!--kolonne-->
+  <div class="kolonne">
+    <!--Torsk-->
+    <div class="menyRett">
+      <img class="menyBilde" src="img/1 til 1/meny9.jpg" alt="">
+      <div class="menyRettTekst">
+        <h1>
+          Torsk fra Lofoten   <b class="pris">189,-</b> 
+        </h1>
+        <br>
+        <!-- Alergier -->
+        <p>
+          🥛  🐟  🥚  🥜
+        </p>
+        <p>
+          Hvitløksmør, ris, grønnsaker, pesto, serveres med en stekt lime
+        </p>
+      </div>
+    </div>
+    
+    <!--Fish & Chips-->
+    <div class="menyRett">
+      <img class="menyBilde" src="img/1 til 1/meny10.jpg" alt="">
+      <div class="menyRettTekst">
+        <h1>
+          Fish & Chips  <b class="pris">169,-   </b> 
+        </h1>
+        <br>
+        <!-- Alergier -->
+        <p>
+          🥛 🐟 🥚 🌾
+        </p>
+        <p>
+          Tartarsaus, ovnsbakte poteter, serveres med sitronskiver
+        </p>
+      
+      </div>
+    </div>
+    
+    
+  </div>
+  <!--kolonne-->
+  <div class="kolonne">
+    <!--Vegetarfajitas-->
+    <div class="menyRett">
+      <img class="menyBilde" src="img/1 til 1/meny11.jpg" alt="">
+      <div class="menyRettTekst">
+        <h1>
+          Vegetarfajitas   <b class="pris">159,-</b> 
+        </h1>
+        <br>
+        <!-- Alergier -->
+        <p>
+          🚫
+        </p>
+        <p>
+          Nachochips, guacamole, salat, meksigarnityr, mais, lime og ris.
+        </p>
+      </div>
+    </div>
+    
+    <!--Veganbowl-->
+    <div class="menyRett">
+      <img class="menyBilde" src="img/1 til 1/meny12.jpg" alt="">
+      <div class="menyRettTekst">
+        <h1>
+          Veganbowl   <b class="pris">159,-</b> 
+        </h1>
+        <br>
+        <!-- Alergier -->
+        <p>
+          🌾
+        </p>
+        <p>
+          Sweet & sour, avokado, edamamebønner og mangosalsa 
+        </p>
+       </div>
+     </div>
+   </div>
+ </div>
+<div class="dessert menyOverskriftDiv">
+  <h1 class="menyOverskrift">
+    Dessert
+  </h1>
+</div>
+
+<div class="menyKontainer" style="margin: 0px auto 0px auto;">
+  
+  <!--kolonne-->
+  <div class="kolonne">
+   
+     <!--Brownies-->
+    <div class="menyRett">
+      <img class="menyBilde" src="img/1 til 1/meny13.jpg" alt="">
+      <div class="menyRettTekst">
+        <h1>
+          Brownies   <b class="pris">159,-</b> 
+        </h1>
+        <br>
+        <!-- Alergier -->
+        <p>
+          🥛  🥚  
+        </p>
+        <p>
+          Serveres med vaniljeis
+        </p>
+        
+       
+      </div>
+    </div>
+  
+  <!--Husets egen eplekake-->
+  
+  <div class="menyRett">
+    <img class="menyBilde" src="img/1 til 1/meny14.jpg" alt="">
+    <div class="menyRettTekst">
+      <h1>
+        Husets egen eplekake  <b class="pris">199,-</b>
+      </h1>
+      <br>
+        <!-- Alergier -->
+      <p>
+        🥛  🥚  🌾 
+      </p>
+      <p>
+        Serveres med vaniljeis 
+      </p>
+    </div>
+  </div>
+  
+  
+</div>
+<!--kolonne-->
+<div class="kolonne">
+  <!--Mango Sago-->
+  <div class="menyRett">
+    <img class="menyBilde" src="img/1 til 1/meny15.jpg" alt="">
+    <div class="menyRettTekst">
+      <h1>
+        Mango Sago   <b class="pris">189,-</b> 
+      </h1>
+      <br>
+      <!-- Alergier -->
+      <p>
+        🚫
+      <p>
+        Tapiokaperler, kokosmelk, lønnesirup og mango
+      </p>
+    </div>
+  </div>
+  
+  <!--Mango sorbet-->
+  <div class="menyRett">
+    <img class="menyBilde" src="img/1 til 1/meny16.jpg" alt="">
+    <div class="menyRettTekst">
+      <h1>
+        Mangosorbet <b class="pris">169,-   </b> 
+      </h1>
+      <br>
+      <!-- Alergier -->
+      <p>
+        🚫
+      </p>
+      <p>
+        Mango
+      </p>
+    
+    </div>
+  </div>
+  
+  
+</div>
+<!--kolonne-->
+<div class="kolonne">
+  <!--Smuldre pai -->
+  <div class="menyRett">
+    <img class="menyBilde" src="img/1 til 1/meny17.jpg" alt="">
+    <div class="menyRettTekst">
+      <h1>
+        Smuldre pai    <b class="pris">159,-</b> 
+      </h1>
+      <br>
+      <!-- Alergier -->
+      <p>
+        🌾 🥛
+      </p>
+      <p>
+        Serveres med plommer og bær
+      </p>
+    </div>
+  </div>
+  
+  <!--Pannekaker-->
+  <div class="menyRett">
+    <img class="menyBilde" src="img/1 til 1/meny18.jpg" alt="">
+    <div class="menyRettTekst">
+      <h1>
+        Pannekaker   <b class="pris">159,-</b> 
+      </h1>
+      <br>
+      <!-- Alergier -->
+      <p>
+        🌾 🥚 🥛
+      </p>
+      <p>
+        8 (!) pannekaker toppet med lønnesirup og knust sjokolade
+      </p>
+     </div>
+   </div>
+ </div>
+</div>
+
   
 
     
@@ -219,8 +487,9 @@
 
 
   </body>
-<!-- script for knappen som tar deg til toppen av siden -->
+
 <script>
+  //script for knappen som tar deg til toppen av siden 
   // henter knappen 
   var topknapp = document.querySelector("#topknapp");
       // når brukeren scroller ned 20 px fra toppen av siden vises knappen
@@ -248,17 +517,20 @@
         for (var i = 0; i < reveals.length; i++) {
           //Window innerHeight-egenskapen brukes til å returnere høyden på et vindus innholdsområde
           //returnerer et tall som representerer høyden på nettleservinduets innholdsområde i piksler.
-          var windowHeight = window.innerHeight;
+          var skjermHoyde = window.innerHeight;
           //returner størrelsen på et element og elements posisjon i forhold til skjermen
           var elementTop = reveals[i].getBoundingClientRect().top;
           //elementet er synlig etter 150 px;
           var visning = 150;
 
-          //if setning for å vise eller skule footeren 
-          if (elementTop < windowHeight - visning) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
+         //if setning for å vise eller skule footeren 
+         if (elementTop < skjermHoyde - visning) {
+            //legger till klassen aktiv
+            reveals[i].classList.add("aktiv");
+          } 
+          else {
+            //fjerner klassen aktiv
+            reveals[i].classList.remove("aktiv");
           }
         }
       }

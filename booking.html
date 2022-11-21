@@ -23,19 +23,18 @@
   <header>
     <div class="bildeBakgrunn">
       <div class="header">
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+        <a id="logo" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
         <a href="index.html">Welcome</a>
         <a href="booking.html">Booking</a>
         <a href="meny.html">Meny</a>
         <a href="accessibility.html">Accessibility</a>
         <a href="topical_page.html">Topical Page</a>
-        <a href="menytest.html">test meny </a>
           <div class="bildeTekst">
             <h1>Booking<br><br></h1>
           </div>
           <div class="bokkDiv">
-            <a href="#divBokkBord"><Button class="bokkKnapp" id="bokkBordKnapp">Bokk Bord</Button></a>
-            <a href="#divBokkLokale"><Button class="bokkKnapp" id="bokkLokaleKnapp">Bokk Lokale</Button></a>
+            <a href="#divBokkBord"><Button class="bokkKnapp" id="bokkBordKnapp">Book Bord</Button></a>
+            <a href="#divBokkLokale"><Button class="bokkKnapp" id="bokkLokaleKnapp">Book Lokale</Button></a>
           </div>
       </div>
     </div>
@@ -48,8 +47,8 @@
   the typical sales pitch about how nice the place is, how perfect it is for a party, etc. The content is 
   not important, but the use of headings, emphasis, and scalability (desktop & mobile) are! Important 
   information mentioned in the first sentence here should be easy to find.  -->
-  <h2 class="h2bookinginfo">Velkommen til Stanley restaurant og catering </h2>
- <!--  <div class = "infodiv">
+ <h2 class="h2bookinginfo">Velkommen til Stanley restaurant og catering </h2>
+  <div class = "infodiv">
     <p class = "bookingInfo"> Vi er en familiedrevet restaurant som strekker seg over flere generasjoner. 
       <br>
       Vi kan tilby en restaurant i første etasje, og et selskapslokale i underetasjen. 
@@ -69,7 +68,16 @@
       
     </p>
     <img src="img/Stjerneskudd.jpg" alt="Bildet av et stjerneskudd" >
-  </div>  --> 
+  </div> 
+
+  <div class="bokkDiv2">
+    <a href="#divBokkBord"><Button class="bokkKnapp" id="bokkBordKnapp2">Book Bord</Button></a>
+    <a href="#divBokkLokale"><Button class="bokkKnapp" id="bokkLokaleKnapp2">Book Lokale</Button></a>
+  </div>
+
+    <!-- <a href="#divBokkBord"><Button class="bokkKnapp" class="bokkBordKnapp">Book Bord</Button></a>
+    <a href="#divBokkLokale"><Button class="bokkKnapp" class="bokkLokaleKnapp">Book Lokale</Button></a>
+   -->
 
 
 <div class="book-boks div-tema" id="divBokkBord">
@@ -165,60 +173,48 @@
   </button>
 </div>
 
+<!-- Bilde nr 1 -->
 <div class="bilde_slide">
-  <div class="minSlide_fade">
-    <div class="nummertekst">1/4</div>
-    <img src="img/bokking_bakgrunn/bokking_bryllup.png" alt="Brylup" width="400px">
-    <div class="bildetekst">Bilde tekst1</div>
+  <div class="minSlide fade">
+    <div class = "bildeBooking" >
+      <img src="img/bokking_bakgrunn/bokking_bryllup.png" alt="Bryllup" width="400px">
+    </div>
+    <div class="bildetekst">Bryllup</div>
+  </div>
+<!-- Bilde nr 2 -->
+  <div class="minSlide fade">
+    <div class = "bildeBooking">
+      <img src="img/bokking_bakgrunn/bokking_julebord.png" alt="Julebord" width="400px">
+    <div class = "bildetekst"> Julebord</div>
+  </div>
+<!-- Bilde nr 3 -->
+  <div class="minSlide fade">
+    <div class="bildeBooking">
+      <img src="img/bokking_bakgrunn/bokking_konf.png" alt="Komfirmasjon" width="400px">
+    </div>
+    <div class="bildetekst">Komfirmasjon</div>
   </div>
 
-  <div class="minSlide_fade">
-    <div class="nummertekst">2/4</div>
-    <img src="img/bokking_bakgrunn/bokking_julebord.png" alt="Julebord" width="400px"
-    <div class="bildetekst">Bilde tekst1</div>
+  <!-- Bilde nr 4 -->
+  <div class="minSlide fade">
+    <div class="bildeBooking">
+      <img src="img/bokking_bakgrunn/bokking_bursdag.png" alt="Bursdag" width="400px">
+    </div>
+    <div class="bildetekst">Bursdag</div>
   </div>
-
-  <div class="minSlide_fade">
-    <div class="nummertekst">3/4</div>
-    <img src="img/bokking_bakgrunn/bokking_konf.png" alt="komfirmasjon" width="400px">
-    <div class="bildetekst">Bilde tekst1</div>
-  </div>
-
-  <div class="minSlide_fade">
-    <div class="nummertekst">4/4</div>
-    <img src="img/bokking_bakgrunn/bokking_bursdag.png" alt="Bursdag" width="400px">
-    <div class="bildetekst">Bilde tekst1</div>
-  </div>
-
-  <a class="tilbake" onclick = "plusSlide(-1)">&#10094</a>
-  <a class="neste" onclick="plusSlide(1)">&#10095</a>   
-    
+  
+  <br>
+<!-- de små dottene under bildene -->
+  <div style="text-align: center ;">
+  <span class = "dot"></span>
+  <span class = "dot"></span>
+  <span class = "dot"></span>
+  <span class = "dot"></span>
 </div>
-<br>
-
-<script>
-  let slideIndex = 0;
-  showSlides();
   
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
-  </script>
-  
-
+</div>
+  <!-- div for å lage avstand mellom footeren og elementet over -->
+  <div style="height: 200px;"></div>
   <!-- footer med Åpningstider og generell informasjon om resturangen -->
   <section>
     <div class="innpakning reveal">
@@ -255,21 +251,56 @@
 
 <script>
     var bokkLokaleKnapp = document.querySelector("#bokkLokaleKnapp");
+    var bokkLokaleKnapp2 = document.querySelector("#bokkLokaleKnapp2");
     var bokkBord = document.querySelector("#divBokkBord");
     var bokkLokale = document.querySelector("#divBokkLokale");
     var bokkBordKnapp = document.querySelector("#bokkBordKnapp");
+    var bokkBordKnapp2 = document.querySelector("#bokkBordKnapp2");
   
-    bokkBordKnapp.addEventListener("click", visBokBord);
-    function visBokBord(){
+    bokkBordKnapp.addEventListener("click", visBokkBord);
+    bokkBordKnapp2.addEventListener("click", visBokkBord);
+    function visBokkBord(){
         bokkBord.style.display= "block";
         bokkLokale.style.display= "none";
     }
     bokkLokaleKnapp.addEventListener("click", visBokkLokale);
+    bokkLokaleKnapp2.addEventListener("click", visBokkLokale);
     function visBokkLokale(){
         bokkLokale.style.display= "block";
         bokkBord.style.display= "none";
     }
 
+    /* For å bytte mellom bildene automatisk */
+    
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    /* Henter elementene fra klassen "minSlide" */
+    let slides = document.getElementsByClassName("minSlide");
+    /* Henter elementer fra klassen "dot" */
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }    
+    /* For at bildet skal bytte og vise hvilken dot som er aktiv */
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // bytter bilde hvert 3 sek
+  }
+    
+
+
+    
+    //script for knappen som tar deg til toppen av siden 
     // henter knappen 
     var topknapp = document.querySelector("#topknapp");
       // når brukeren scroller ned 20 px fra toppen av siden vises knappen
@@ -298,17 +329,20 @@
         for (var i = 0; i < reveals.length; i++) {
           //Window innerHeight-egenskapen brukes til å returnere høyden på et vindus innholdsområde
           //returnerer et tall som representerer høyden på nettleservinduets innholdsområde i piksler.
-          var windowHeight = window.innerHeight;
+          var skjermHoyde = window.innerHeight;
           //returner størrelsen på et element og elements posisjon i forhold til skjermen
           var elementTop = reveals[i].getBoundingClientRect().top;
           //elementet er synlig etter 150 px;
           var visning = 150;
 
           //if setning for å vise eller skule footeren 
-          if (elementTop < windowHeight - visning) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
+          if (elementTop < skjermHoyde - visning) {
+            //legger till klassen aktiv
+            reveals[i].classList.add("aktiv");
+          } 
+          else {
+            //fjerner klassen aktiv
+            reveals[i].classList.remove("aktiv");
           }
         }
       }

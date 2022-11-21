@@ -1,25 +1,30 @@
+.bakgrunn{
+    background-color: aliceblue;
+}
 .topicalinnhold{
     margin: auto;
-    width: 1000px;
-    padding: 10px;
-    align-items: center;
-    text-align: center;
-    display: flex;
-     text-align: left;
-    background-color: gray;
-    padding: 10px;
-    height: 700px;
+    width: 1100px;
+    height: 1700px;
+    background-color: rgba(56, 51, 51, 0.601);
 }
 .topicalinnhold p{
    margin: 10px
 }
-.topicalinnhold img{
+.topicalBilde{
     height: 700px;
+    position: relative;
+    top: 0px;
+    right: 0px;
     float: right;
 }
+
+/* .topicalinnhold img{
+    height: 700px;
+    float: right;
+} */
 .overskrift{
     text-align: center;
     padding-top: 20px;
-
+    margin: 10px;
 
 }
