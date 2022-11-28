@@ -127,3 +127,13 @@
 @media (max-width: 1250px) {.menyKontainer, .allergenKonteiner{
   display: block;
 }}
+@media (max-width: 1250px) {.menyBilde {
+  height: 80px;
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+  margin-right: 10px;
+}}
+@media (max-width: 1250px) {.kolonne, .menyRett{
+  margin: auto;
+  width: 300px;
+}}
