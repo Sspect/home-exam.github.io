@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book bord</title>
+    <!-- Inportering av css -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+      <!--Header-->
+    <header>
+        <div class="bildeBakgrunn">
+          <div class="header">
+            <a id="logo" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+            <a href="index.html">Welcome</a>
+            <a href="booking.html">Booking</a>
+            <a href="meny.html">Meny</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="topical_page.html">Topical Page</a>
+              <div class="bildeTekst">
+                <h1>Booking<br><br></h1>
+              </div>
+          
+          </div>
+        </div>
+      </header>
+         <!-- knapp for å ta deg tilbake til topp av siden -->
+      <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
+      
+      
+<div class="book-boks div-tema" id="divBokkBord">
+    <h2>Book Bord</h2>
+    
+    <div class="input-boks">
+      <input type="Username" required name="fname">
+      <label>Navn</label>
+    </div>
+  
+    <div class="input-boks">
+      <input type="tel" required>
+      <label>Telefon.nr</label>
+    </div>
+  
+    <div class="input-boks">
+      <input type="email" multiple required>
+      <label>E-mail</label>
+    </div>
+  
+    <div class="input-boks">
+      <select name="Antall">
+        <option value="1">1 person</option>
+        <option value="2">2 personer </option>
+        <option value="3">3 personer</option>
+        <option value="4">4 personer</option>
+        <option value="5">5 personer</option>
+        <option value="6">6 personer</option>
+        <option value="7">7 personer</option>
+        <option value="8">8 personer</option>
+        <option value="9">9 personer</option>
+        <option value="10">10 personer</option>
+        <option value="11">Mer enn 10</option>
+      </select>
+    </div>
+    <div class="input-boks">
+      <input type="text" required>
+      <label>Kommentarer</label>
+    </div>
+    
+    <button class="button" onclick="alert('Forespørselen er sendt!')" type="submit">
+      Send forespørsel
+    </button>
+  </div> 
+    
+
+  <a href="booking.html"><Button class="bokkKnapp">Book Bord</Button></a>
+
+  <div style="height: 100px;"></div>
+           
+</body>
+</html>

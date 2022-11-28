@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book lokale</title>
+     <!-- Inportering av css -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="bildeBakgrunn">
+          <div class="header">
+            <a id="logo" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+            <a href="index.html">Welcome</a>
+            <a href="booking.html">Booking</a>
+            <a href="meny.html">Meny</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="topical_page.html">Topical Page</a>
+              <div class="bildeTekst">
+                <h1>Booking<br><br></h1>
+              </div>
+         
+          </div>
+        </div>
+      </header>
+         <!-- knapp for å ta deg tilbake til topp av siden -->
+      <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
+      
+
+
+<div class="book-boks div-tema" id="divBokkLokale">
+    <h2>Book lokale</h2>
+    
+    <div class="input-boks">
+      <input type="Username" required name="fname">
+      <label>Navn</label>
+    </div>
+  
+    <div class="input-boks">
+      <input type="tel" required>
+      <label>Telefon.nr</label>
+    </div>
+  
+    <div class="input-boks">
+      <input type="email" multiple required>
+      <label>E-mail</label>
+    </div>
+  
+    <div class="input-boks">
+      <select name="Type aragnsement">
+        <option value="1">Bryllup </option>
+        <option value="2">Konfirmasjon </option>
+        <option value="3">Minnesamvær</option>
+        <option value="4">Julebord</option>
+        <option value="5">Selskapsfest</option>
+        <option value="6">Bursdag</option>
+        <option value="7">Møteplass</option>
+        <option value="8">Nyttårsfest</option>
+        <option value="9">Annet (spesifiser i kommentarfeltet)</option>
+      </select>
+    </div>
+  
+    <div class = "input-boks">
+      <input type="number" min="10" max ="150" step ="5" required>
+      <label >Antall (ca)</label>
+    </div>
+    <div class="input-boks">
+      <input type="text" required>
+      <label>Kommentarer </label>
+    </div>
+  
+  
+    <button class="button" onclick="alert('Forespørselen er sendt!')" type="submit">
+    Send forespørsel
+    </button>
+  </div>
+
+
+
+</body>
+</html>

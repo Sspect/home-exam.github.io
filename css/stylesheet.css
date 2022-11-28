@@ -121,17 +121,22 @@ img {
   #topknapp:hover {
     background-color: #555;
   }
+  .footerboks {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+  }
   .kolonnefooter{
     width: 48%;
   }
   .kontakt{
-    margin-left: 50%;
+    margin-left: 25%;
   }
   .kontakt p{
     text-align: left;
   }
   .åpning{
-    margin-right: 50%;
+    margin-left: 25%;
   }
   .åpning p{
     text-align: left;
