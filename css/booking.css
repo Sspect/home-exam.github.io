@@ -1,50 +1,74 @@
+#bakgrunnBilde1{
+    background-image: url(../img/bokking_bakgrunn/langbord.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right;
+}
+#bakgrunnBilde2{
+    background-image: url(../img/bokking_bakgrunn/langbord.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: left;
+    
+}
 
-#divBokkBord{
-    display: block;
-}
-#divBokkLokale{
-    display: block;
-}
-.h2bookinginfo{
-    margin: auto;
-    width: 550px;
-    padding: 10px;
-    align-items: center;
+
+.info h2{
     text-align: center;
-    display: flex;
+    border-bottom: white solid;
 }
-.infodiv{
-    margin: auto;
-    width: 1100px;
+.info{
+    margin: 20px auto 20px auto;
+    width: 400px;
     padding: 10px;
-    /*background-color: rgb(187, 115, 22);*/
-    display: flex;
-    align-items: center;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    border-bottom: white solid;
+   
 }
-.infodiv img{
-    position: relative;
-    right: 0px;
-    height: 500px;
-}
-/* teksten inne i infodiv */
+
+/* teksten inne i info */
 .bookingInfo{
-    padding: 10px;
-   background-color: rgb(70, 70, 70);
-    text-align: left;
-    width: 550px;
-    height: 480px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(70, 70, 70);
+    height: 530px;
+    width: 300px;
+    font-style: italic;
 }
+.bookingInfo a{
+    color: rgb(146, 207, 245);/*Link til lokalet*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.bookingInfo b{
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    color: white;
+}
+
+
+
+
+
+/*TIL BOOKINGBOKSENE I BOOKBORD OG BOOKLOKALE*/
+
+
 .book-boks{
     display: block;
     margin: 30px auto 30px auto;
     width: 400px;
     padding: 40px;
     box-sizing: border-box;
-    /*          rgt  bot  smoke     */
+    /*          rgt  bot  røyk     */
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.753);
     border-radius: 10px;
+    border-bottom: black solid;
 }
-/* fjern den globale box-shadow på alle diver */
+/* fjerner den globale box-shadow på alle diver */
 .input-boks{
     box-shadow: none;
 }
@@ -104,7 +128,7 @@ select option {
 .book-boks .input-boks input:valid ~ label {
     top: -18px;
     left: 0px;
-    color: rgb(0, 83, 108);
+    color: rgb(50, 53, 53);
     font-size: 12px;
 }
 .book-boks button[type = "submit"]{
@@ -121,52 +145,74 @@ select option {
 .book-boks button[type = "submit"]:hover{
     background-color: #fff;
     color: #000000;
-    }
-/* For å få automatisk bildebytte */
-.bilde_slide{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-/*Skjuler bildene*/
-.minSlide{
-    display: none;
 }
 
-.bildetekst .bildeBooking{
-    color: rgb(241, 239, 239);
-    font-size: 18px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
+/*BUTTON KNAPPER TIL BOOOKING*/
+.bookingKnapper{
     text-align: center;
-    z-index: 0;
+    justify-content: center;
+    margin: auto;
+    padding-top: 20px;
 }
-
-.dot{
-    
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #717171;
-    border-radius: 50%;
+.Knapp{
+    border: none;
+    outline: 0;
     display: inline-block;
-    transition: 0.8s ease; 
-
-}
-
-.active{
-    background-color: #bbb;
-}
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade{
-    from{opacity: .4;}
-    to{opacity: 1;}
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.673);
+    padding: 10px 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
 }
 
 
+/* Telefon */
 
+ /* @media (min-width: 1000px) {header, .h2bookinginfo, .infodiv, .bilde_slide img{
+    display: block;
+    margin: auto;
+    width: 100%;
+   }} */
+ 
+
+
+/* Telefon  under 1000px */
+@media (max-width: 1000px) {header, .h2bookinginfo, .infodiv, .footerboks,.footerboks a{ 
+    display: block;   
+    margin: auto;
+    width: 100%;
+    font-size: 14px;
+   }}
+  
+  @media (max-width: 1000px) {header, .h2bookinginfo, .infodiv, header {
+    width: 1000px;
+  }}
+   @media (max-width: 1000px) {.infodiv {
+    width: 980px;
+  }}
+  @media (max-width: 1000px) {#bakgrunnBilde2, #bakgrunnBilde1 {
+    background-image: none;
+  }}
+ 
+  
+  
+  
+
+/* Telefon under 500px */
+@media (max-width: 500px) {header, .h2bookinginfo, .infodiv, .bilde_slide img{
+    display: block;
+    margin: auto;
+    width: 100%;
+   }}
+  @media (max-width: 500px) {header, .h2bookinginfo, .infodiv, header {
+    width: 500px;
+  }}
+   @media (max-width: 500px) {.infodiv {
+    width: 480px;
+  }}
+   @media (max-width: 500px) {#bakgrunnBilde1, #bakgrunnBilde2 {
+    background-image: none;
+  }}
+
+  

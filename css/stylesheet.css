@@ -127,7 +127,7 @@ img {
     display: flex;
   }
   .kolonnefooter{
-    width: 48%;
+    width: 50%;
   }
   .kontakt{
     margin-left: 25%;
@@ -144,7 +144,7 @@ img {
   
 footer {
     padding-top: 10px;
-    margin-top: 200px;
+    margin-top: 50px;
     clear: both;
     text-align: center;
     background-color: #101010;

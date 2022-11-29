@@ -11,16 +11,46 @@
 /* putter Stanley Restaurant & Catering sin logo i center */
 .bildeTekst{
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 540px;
+    margin: auto;
+    padding-top: 100px;
     color: rgb(255, 255, 255);
     border-bottom: 5px solid #dfdfdf;
-   
-}
+   }
+   .bildeTekstBooking{
+    text-align: center;
+    width: 220px;
+    margin: auto;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid #dfdfdf;
+   }
+   .bildeTekstMeny{
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid #dfdfdf;
+   }
+   .bildeTekstAccessibility{
+    text-align: center;
+    width: 320px;
+    margin: auto;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid #dfdfdf;
+   }
+   .bildeTekstTopical{
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid #dfdfdf;
+   }
 /* angir utsende for skriften */
-.bildeTekst h1{
+.header h1{
     color: #dfdfdf;
     font-size: 50px;
     position: relative;
@@ -28,6 +58,7 @@
     line-height: 75px;
     height: 225;
 }
+
 /* angir heaseren */
 .header{
     width: 100%;
@@ -40,36 +71,13 @@
     color: #ffffff;
     margin: 25px;
     font-size: 20px;
+    border-bottom: white solid;
 }
 /* teksten endrer farge når du holder musepekeren over */
 .header a:hover{
     color: #767676;
 }
 
-.bokkKnapp {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.673);
-    padding: 10px 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    cursor: pointer;
-}
-  
-.bokkDiv{
-    position: relative;
-    top: 400px;
-    width: 600px;
-    margin: auto;
-}
-.bokkDiv2{
-    text-align: center;
-    position: relative;
-    width: 570px;
-    margin: auto;
-}
 .ingridienser{
     font-size: 20px;
     margin: 0px;
