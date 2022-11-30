@@ -32,7 +32,7 @@
 /* teksten inne i info */
 .bookingInfo{
     text-align: center;
-    margin: auto;
+    margin:auto;
     padding: 20px;
     background-color: rgb(70, 70, 70);
     height: 530px;
@@ -45,12 +45,10 @@
     font-size: 16px;
 }
 .bookingInfo b{
-    text-decoration-line: underline;
+    text-decoration-line: underline ;
     text-decoration-thickness: 2px;
     color: white;
 }
-
-
 
 
 
@@ -58,16 +56,19 @@
 
 
 .book-boks{
+    background-color: #8a8a8a;
     display: block;
     margin: 30px auto 30px auto;
     width: 400px;
     padding: 40px;
     box-sizing: border-box;
     /*          rgt  bot  røyk     */
-    box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.753);
+    box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     border-bottom: black solid;
 }
+
+
 /* fjerner den globale box-shadow på alle diver */
 .input-boks{
     box-shadow: none;
@@ -147,6 +148,9 @@ select option {
     color: #000000;
 }
 
+
+
+
 /*BUTTON KNAPPER TIL BOOOKING*/
 .bookingKnapper{
     text-align: center;
@@ -167,59 +171,45 @@ select option {
 }
 
 
-/* Telefon */
-
- /* @media (min-width: 1000px) {header, .h2bookinginfo, .infodiv, .bilde_slide img{
-    display: block;
-    margin: auto;
-    width: 100%;
-   }} */
- 
 
 
 /* Telefon  under 1000px */
-@media (max-width: 1000px) {header, .h2bookinginfo, .infodiv, .footerboks,.footerboks a{ 
-    display: block;   
-    margin: auto;
-    width: 100%;
+@media (max-width: 1000px) {.info { 
+    /* display: block;   */ 
     font-size: 14px;
    }}
-  
-  @media (max-width: 1000px) {header, .h2bookinginfo, .infodiv, header {
-    width: 1000px;
-  }}
-   @media (max-width: 1000px) {.infodiv {
-    width: 980px;
-  }}
+
+/*    @media (max-width: 1000px) {.bookinginfo {
+    width
+    
+  }} */
   @media (max-width: 1000px) {#bakgrunnBilde2, #bakgrunnBilde1 {
     background-image: none;
   }}
- 
   
+ 
   
   
 
 /* Telefon under 500px */
-@media (max-width: 500px) {header, .h2bookinginfo, .infodiv, .bilde_slide img{
-    display: block;
-    margin: auto;
+  @media (max-width: 400px) {.info {
+    display: block; 
     width: 100%;
    }}
-  @media (max-width: 500px) {header, .h2bookinginfo, .infodiv, header {
-    width: 500px;
-  }}
-   @media (max-width: 500px) {.infodiv {
-    width: 480px;
-  }}
+   @media (max-width: 400px) { .bookingInfo{
+    width: 90%;
+    height: auto;
+   }}
+
+   
    @media (max-width: 500px) {#bakgrunnBilde1, #bakgrunnBilde2 {
     background-image: none;
-  }}
-  /* scaling for fotteren */
-  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
-    display: block;
-     width: 100%;
-    padding: 5px;
-    margin: 0px;
-  }}
-
+  }} 
   
+   
+   
+   
+  /*  @media (max-width: 500px) {.book-boks{
+    width: 500px;
+    height: 700px;
+  }} */

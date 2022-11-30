@@ -81,11 +81,7 @@ img {
 }
 
 
-.div-tema {
-    border-radius: 0px;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
-    background-color: #8a8a8a;
-}
+
 
 /* Velkommen diven under headeren */
 .div-tema2{
@@ -133,13 +129,13 @@ img {
     margin-left: 25%;
   }
   .kontakt p{
-    text-align: left;
+    text-align: center;
   }
   .åpning{
     margin-left: 25%;
   }
   .åpning p{
-    text-align: left;
+    text-align: center;
   }
   
 footer {
@@ -175,4 +171,27 @@ footer {
   .reveal.aktiv{
     transform: translateY(0);
     opacity: 1;
+    
   }
+  /* scaling for fotteren */
+  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+}}
+  /* scaling for fotteren */
+  @media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter, section{
+   display: block;
+   width: 100%;
+   padding: 5px;
+   margin: 0px;
+  
+}}
+  /* scaling for fotteren */
+ @media (max-width: 1000px) {.footerboks, .footerboks a{
+   display: block;
+   font-size: 14px;
+   text-align: center;
+}}
+ 

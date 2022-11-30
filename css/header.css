@@ -1,10 +1,12 @@
 /* angir utsenede på headeren */
 /* setter bile som bakgrunn i headeren */
 .bildeBakgrunn{
+    text-align: center;
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)) ,url(../img/Resturant_bakgrunn.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: 50%;
     width: 100%;
     height: 700px;
 }
@@ -53,30 +55,31 @@
 .header h1{
     color: #dfdfdf;
     font-size: 50px;
-    position: relative;
-    top: 75px;
-    line-height: 75px;
+    /* position: relative;
+    top: 75px; */
+   /*  line-height: 75px; */
     height: 225;
 }
 
 /* angir heaseren */
 .header{
+    text-align: center;
     width: 100%;
     text-align: center;
-    padding: 90px 0px 50px 0px;
+    padding: 20px 0px 50px 0px;
     margin-bottom: 30px;
 }
 /* angir utsende p[ linkene til de andre sidene */
 .header a{
     color: #ffffff;
-    margin: 25px;
+    padding-bottom: 20px;
     font-size: 20px;
     /*border-bottom: white solid;*/
 }
 /* teksten endrer farge når du holder musepekeren over */
 .header a:hover{
     color: #767676;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
 }
 
 .ingridienser{
@@ -85,14 +88,29 @@
     padding: 0px;
 }
 .logo{
-    height: 100px;
-    float: left;
+    padding-top: 30px;
+    width: 10%;
+    height: auto;
+    margin: auto;
+/*     float: left;
     position: relative;
     top: -35px;
-    left: 70px;
+    left: 70px; */
     border-radius: 50%;
 }
-#logo{
-    margin: 0px;
-    padding: 0px;
+
+.header br{
+    display: none;
 }
+@media (max-width: 1000px) {.header a, .header br{
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+  }}
+
+
+/* denne median er så alt i hedderen ikke beveger seg når man "hover" over et a ellement i header */
+@media (max-width: 1000px) {.header a:hover{
+    padding-bottom: 15px;
+}}

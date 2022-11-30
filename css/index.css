@@ -57,18 +57,17 @@
 
 @media (max-width: 1000px) {.box-right, .box-left {
     display: block;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }}
-  @media (max-width: 1000px) {.footerboks, .footerboks a{
-    display: block;
-    font-size: 14px;
+  @media (max-width:1000px){.boksTekst h1{
+    font-size: 50px;
+
   }}
-    /* scaling for fotteren */
-  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
-    display: block;
-     width: 100%;
-    padding: 5px;
-    margin: 0px;
-  }}
+  
+   
 
 
   
