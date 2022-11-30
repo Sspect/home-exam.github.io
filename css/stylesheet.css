@@ -194,4 +194,26 @@ footer {
    font-size: 14px;
    text-align: center;
 }}
+
+
+ /* scaling for fotteren */
+ @media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter, section{
+  display: block;
+   width: 100%;
+  padding: 5px;
+  margin: 0px;
+  
+}}
  
+  /* scaling for fotteren */
+  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+}}
+@media (max-width: 1000px) {.footerboks, .allergenKonteiner,.footerboks a{
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}}

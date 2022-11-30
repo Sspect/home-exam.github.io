@@ -1,5 +1,5 @@
-/* angir utsenede på headeren */
-/* setter bile som bakgrunn i headeren */
+/* angir utsenede på header'en */
+/* setter bile som bakgrunn i header'en */
 .bildeBakgrunn{
     text-align: center;
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)) ,url(../img/Resturant_bakgrunn.jpg);
@@ -55,13 +55,9 @@
 .header h1{
     color: #dfdfdf;
     font-size: 50px;
-    /* position: relative;
-    top: 75px; */
-   /*  line-height: 75px; */
-    height: 225;
 }
 
-/* angir heaseren */
+/* angir header'en */
 .header{
     text-align: center;
     width: 100%;
@@ -102,12 +98,17 @@
 .header br{
     display: none;
 }
-@media (max-width: 1000px) {.header a, .header br{
+@media (max-width: 1000px) {.header a, .bildeTekst{
+    padding-top: 10px;
     display: block;
     width: fit-content;
     margin: auto;
+    margin-top: 15px;
 
   }}
+@media (max-width: 1000px) {.header a{
+    font-size: 50px;
+}}
 
 
 /* denne median er så alt i hedderen ikke beveger seg når man "hover" over et a ellement i header */
