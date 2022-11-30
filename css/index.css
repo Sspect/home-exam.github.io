@@ -7,9 +7,8 @@
 
 .box-right{
     display: inline-block;
-    clear: both;
-    margin-top: 100px;
-    margin-right: 20px;  
+    clear: both; 
+    margin: 50px auto auto auto; 
     height: 400px;
     width: 400px;
     background-position: center;
@@ -39,8 +38,7 @@
 .box-left{
     display: inline-block;
     clear: both;
-    margin-top: 100px;
-    margin-right: 20px; 
+    margin: 50px auto auto auto;
     height: 400px;
     width: 400px;
     background-position: center;
@@ -57,7 +55,20 @@
     url("../img/telefon.jpg");
 }
 
-
+@media (max-width: 1000px) {.box-right, .box-left {
+    display: block;
+  }}
+  @media (max-width: 1000px) {.footerboks, .footerboks a{
+    display: block;
+    font-size: 14px;
+  }}
+    /* scaling for fotteren */
+  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
+    display: block;
+     width: 100%;
+    padding: 5px;
+    margin: 0px;
+  }}
 
 
   

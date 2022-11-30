@@ -214,5 +214,12 @@ select option {
    @media (max-width: 500px) {#bakgrunnBilde1, #bakgrunnBilde2 {
     background-image: none;
   }}
+  /* scaling for fotteren */
+  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
+    display: block;
+     width: 100%;
+    padding: 5px;
+    margin: 0px;
+  }}
 
   

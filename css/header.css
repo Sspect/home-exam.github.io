@@ -71,11 +71,12 @@
     color: #ffffff;
     margin: 25px;
     font-size: 20px;
-    border-bottom: white solid;
+    /*border-bottom: white solid;*/
 }
 /* teksten endrer farge når du holder musepekeren over */
 .header a:hover{
     color: #767676;
+    border-bottom: 3px solid white;
 }
 
 .ingridienser{
