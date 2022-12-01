@@ -1,23 +1,26 @@
 /* 
-    Alt i denne text.css gjeller for all tekst, memindre overskrevet.
+    Alt i denne text.css gjeller for all tekst, medmindre overskrevet.
 
     Fonten er hentet fra https://fonts.google.com/specimen/Baloo+2?category=Display&preview.size=35 
     koden er på W3schools; https://www.w3schools.com/cssref/pr_import_rule.php
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+/* importert google font */
+/* https://fonts.google.com/specimen/Red+Hat+Display?category=Sans+Serif&preview.size=35&preview.text=meny_____________%20booking%20acessebilety%20page&preview.text_type=custom*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* smooth scroll animassjon for hele websiden */
 html {
     scroll-behavior: smooth;
 }
+/* standar styling for alle sidene medmindre overskrevet */
 body{
     margin: 0px;
-    font-family: 'Arial';
+    font-family: 'Red Hat Display', sans-serif;
     background-color: #161616;
 }
 
-    /* custom scrollbar */
+    /* custom scrollbar -> funker ikke bra for mobil*/
     /* width */
     /* ::-webkit-scrollbar {
         width: 15px;
@@ -39,24 +42,22 @@ body{
     } */
     /* /custom scrollbar */
     
+/* setter fargen og marginen for alle h1 - h6 tagene */
 h1, h2, h3, h4, h5, h6{
     color: rgb(255, 255, 255);
     margin: 0px;
 }
-
 h1 {
     font-size: 20px;
 }
-
+/* gir alle p elementer hvit farge */
 p {
     color: rgb(255, 255, 255);
 }
-
-
+/* standar styling for  */
 a{
     height: auto;
     padding: 10px;
-    font-weight: bold;
     font-size: 20px;
     text-decoration: none;
     color: rgb(58, 58, 255);
@@ -68,7 +69,6 @@ a :hover{
 
 
 img {
-    
     height: 100%;
 }
 
@@ -103,7 +103,7 @@ img {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -117,27 +117,8 @@ img {
   #topknapp:hover {
     background-color: #555;
   }
-  .footerboks {
-    width: 1200px;
-    margin: auto;
-    display: flex;
-  }
-  .kolonnefooter{
-    width: 50%;
-  }
-  .kontakt{
-    margin-left: 25%;
-  }
-  .kontakt p{
-    text-align: center;
-  }
-  .åpning{
-    margin-left: 25%;
-  }
-  .åpning p{
-    text-align: center;
-  }
   
+/* styler footeren  */
 footer {
     padding-top: 10px;
     margin-top: 50px;
@@ -148,72 +129,44 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.kontakt, .åpning{
-    width: 400px;
-}
-  
-  section{
-    min-height: 100px;
+/* de to boksene footeren er splittet opp i */
+.footerboks {
+    width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  .innpakning{
-    width: 100%;
-   /*  margin-bottom: 100px; */
+  /* gir kolonnefooter diven bredde 50% inne i footeren */
+  .kolonnefooter{
+    width: 50%;
   }
-  .reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
+  /* setter bredden på kontakt og åpning divene til 400px inne i kolonnefooteren*/
+  .kontakt, .åpning{
+      width: 400px;
   }
-  .reveal.aktiv{
-    transform: translateY(0);
-    opacity: 1;
-    
+  /* gir kontakt og åpning divene en margin-left på 25% inne i kolonnefooteren*/
+  .kontakt, .åpning{
+    margin-left: 25%;
   }
-  /* scaling for fotteren */
-  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
-    display: block;
-    width: 100%;
-    padding: 5px;
-    margin: 0px;
-}}
-  /* scaling for fotteren */
-  @media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter, section{
-   display: block;
-   width: 100%;
-   padding: 5px;
-   margin: 0px;
+  /* sentrerer p elementene i kontakt og åpning divene */
+  .kontakt p, .åpning p{
+    text-align: center;
+  }
   
-}}
-  /* scaling for fotteren */
- @media (max-width: 1000px) {.footerboks, .footerboks a{
-   display: block;
-   font-size: 14px;
-   text-align: center;
-}}
-
-
- /* scaling for fotteren */
- @media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter, section{
+/* For telefon med bredde mindre enn 1000px */
+/* legger kontakt og åpningsdivene under hverandre og setter bredden til 100% */
+@media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter{
   display: block;
-   width: 100%;
+  width: 100%;
   padding: 5px;
   margin: 0px;
-  
 }}
- 
-  /* scaling for fotteren */
-  @media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
-    display: block;
-    width: 100%;
-    padding: 5px;
-    margin: 0px;
-}}
-@media (max-width: 1000px) {.footerboks, .allergenKonteiner,.footerboks a{
+/* gir footerboks og a elementene i footerboks styling slik at de holder seg i midten under hverandre */
+@media (max-width: 1000px) {.footerboks, .footerboks a{
   display: block;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 16px;
   text-align: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px;
 }}

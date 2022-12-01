@@ -1,69 +1,56 @@
-.allergenDiv{
 
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+/* allergener diven */
+/* setter dimensjonene og legger til bakgrunnsbilde */
+.allergenDiv{
+  margin: 20px auto 20px auto;
   padding-bottom: 20px;
   width: 90%;
-  color: #fff;
-  background-image: linear-gradient(rgba(52, 52, 52, 0.3), rgba(52, 52, 52, 0.3)), url(../img/tarket.png);
-  
+  color: #ffffff;
+  background-image: linear-gradient(rgba(52, 52, 52, 0.3), 
+  rgba(52, 52, 52, 0.3)), url(../img/tarket.png);
   border-radius: 30px;
-  
   background-repeat: no-repeat;
   background-size: cover;
-  /* 
-  padding-bottom: 20px;
-  text-align: center;
-  padding-top: 1px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  */
 }
-.allergenOverskriftKontainer{
-  /* MÅ HA JELP SONDRE!!!! */
-  border: 1px solid transparent;
-
-  
+/* skaper mellomrom mellom diven (allergenDiv) og overskriften */
+.allergenOverskriftKontainer h1{
+  padding: 40px 20px 5px 20px;
 }
 .allergenKonteiner{
-  display: flex;
+  /* sentrerer teksten i diven og setter display til flex */
   text-align: center;
+  display: flex;
 }
-
+/* divene inne i diven allergenKonteiner */
+/* syler hvordav teksten vil se ut eks:(<div>Melk:🥛</div>) */
 .allergenKonteiner div{
   height: 60px;
   margin: auto;
   font-size: 25px;
 }
-
+/* dette er diven for alle overskriftene på menysiden */
+/* setter dimensjonene og legger til bakgrunnsbilde sammen med klassene lunsj, middag og dessert */
 .menyOverskriftDiv{
-  /* border: 5px rgb(0, 182, 238) solid; */
   color: #ffffff;
   width: 90%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: auto; 
+  margin-bottom: 20px;
+  padding: 20px 0px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
-  margin-bottom: 20px;
 }
 /* bakgrunnsbilder til overskriftene lunsj, middag og dessert */
 .lunsj{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/lunsj_header1.png);
 }
-
 .middag{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/middag_header.png);
 }
-
 .dessert{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/disser_header1.png);
 }
-
-
-
+/* styler utsende på overskriftene på meny pagen */
 .menyOverskrift{
   text-align: center;
   color: #fff;
@@ -73,34 +60,30 @@
   margin: 40px auto 40px auto ;
   padding-bottom: 5px;
   box-shadow: 0px 15px 10px -10px #000;
-  
 }
+/* dette er diven som oppfører seg som en konteiner og holder de andre divene på plass */
 .menyKontainer{
-  
   border-radius: 30px;
   background-color: rgb(32, 32, 32);
   width: 90%;
   display: flex;
   margin: 0px auto 100px auto ; 
-  /*border: 5px #f40000 solid; */
 }
-
-/* 475px */
+/* dette er kollonenee inne i div konteinerne */
 .kolonne{
   width: 90% ;
-  /*border: 5px rgb(0, 247, 255) solid;*/
   margin: auto;
 }
+/* dette er divene som inneholder matrettene */
 .menyRett{
   margin: auto;
   width: 100%;
   height: 300px;
-  /*border: 5px greenyellow solid;*/
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0px;   /* mellomromm mellom rettene */
 }
+/* dette er bilde av rettene */
 .menyBilde{
   height: 80px;
   border-radius: 45px;
@@ -108,18 +91,19 @@
   margin-right: 10px;
   box-shadow: 10px 10px 20px #000;
 }
+/* styler utsende på tekseten for retten */
 .menyRettTekst{
   height: 110px;
-  /* border: 5px #0029f4 solid; */
   width: 250px;
 }
+/* styler utsende på tekseten for retten */
 .menyRettTekst h1{
   font-weight: normal;
   border-bottom: 3px white solid;
   float: left;
   box-shadow: 0px 15px 10px -10px #000;
 }
-
+/* styler utsende på prisen */
 .pris{
   margin: 0px;
   padding: 0px;
@@ -127,55 +111,37 @@
   color: rgb(203, 7, 7);
 }
 
+/* For telefon  med bredde mindre enn 1000px */
+/* kolonne diven får en bredde på 25% */
 @media (min-width: 1000px) {.kolonne{
-  
   width: 25%;
 }} 
-
-
-
-
+/* gir allergenKonteiner display block isteden for flex */
+@media (max-width: 1000px) { .allergenKonteiner{
+  display: block;
+}} 
+/* gir menyKontainer display block isteden for flex */
 @media (max-width: 1000px) {.menyKontainer{
   display: block;
 }}
-
+/* gir kolonne diven display flex isteden for block */
 @media (max-width: 1000px) {.kolonne{
   display: flex;
-  }}
-
+}}
+/* gir menyRett diven width 50% */
 @media (max-width: 1000px) {.menyRett{
-  
   width: 50%;
 }}  
 
-
-/* width < 500px */
+/* For telefon  med bredde mindre enn 500px */
+/* gil kolonne diven display block isteden for flex */
 @media (max-width: 500px) {.kolonne{
   display: block;
 }}
-  /* scaling for fotteren */
-@media (max-width: 500px) {.åpning, .kontakt, .kolonnefooter, section{
-    display: block;
-    width: 100%;
-    padding: 5px;
-    margin: 0px;
-}}
+/* gir menyRett diven en bredde på 100% */
 @media (max-width: 500px) {.menyRett{
-  
   width: 100%;
 }}  
 
 
-@media (max-width: 1000px) {.footerboks, .allergenKonteiner,.footerboks a{
-  display: block;
-  font-size: 14px;
-  text-align: center;
-}}
- /* scaling for fotteren */
- @media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter, section{
-  display: block;
-   width: 100%;
-  padding: 5px;
-  margin: 0px;
-  
-}}
+

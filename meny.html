@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Inportering av css -->
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/header.css">
@@ -18,21 +19,21 @@
   <body>
 
     <!-- Header -->
-    <header>
-      <div class="bildeBakgrunn">
-        <div class="header">
-          <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
-          <a href="index.html">Welcome</a>
-          <a href="booking.html">Booking</a>
-          <a href="meny.html">Meny</a>
-          <a href="accessibility.html">Accessibility</a>
-          <a href="topical_page.html">Topical Page</a>
-            <div class="bildeTekstMeny">
-              <h1>Meny</h1>
-            </div>
+    <header class="headerBildeBakgrunn">
+      
+      <a class="logoLenke" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+      <div class="headerLenkeContainer">
+        <a href="index.html">Welcome</a>
+        <a href="booking.html">Booking</a>
+        <a href="meny.html">Meny</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topical_page.html">Topical Page</a>
+          <div class="headerOverskriftContainer">
+            <h1>Meny</h1>
           </div>
-        </div>
-      </header>
+      </div>
+    
+  </header>
       <!-- <h1>MENY<p id="ingridienser">Inneholder melk:🥛, egg:🥚, gluten:🌾, fisk:🐟, nøtter:🥜</p></h1> -->
       <!-- knapp for å ta deg tilbake til topp av siden -->
       <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
@@ -50,7 +51,12 @@
         </div>
         
         <div class="allergenKonteiner">
-          <div>Melk:🥛</div> <div>Egg:🥚</div> <div>Gluten:🌾</div> <div>Fisk:🐟</div> <div>Nøtter:🥜</div><div>Ingen allergener:🚫</div>
+          <div>Melk:🥛</div>
+           <div>Egg:🥚</div> 
+           <div>Gluten:🌾</div> 
+           <div>Fisk:🐟</div> 
+           <div>Nøtter:🥜</div>
+           <div>Ingen allergener:🚫</div>
         </div>
 
       </div>
@@ -71,7 +77,7 @@
           <!--Club Sandwich-->
           
           <div class="menyRett">
-            <img class="menyBilde" src="img/1 til 1/meny1.jpg" alt="">
+            <img class="menyBilde" src="img/1 til 1/meny1.jpg" alt="Club sandwich">
             <div class="menyRettTekst">
               <h1>
                 Club Sandwich <b class="pris">199,-</b> 
@@ -89,7 +95,7 @@
         
          <!--Roastbiff Sandwich-->
         <div class="menyRett">
-          <img class="menyBilde" src="img/1 til 1/meny2.jpg" alt="">
+          <img class="menyBilde" src="img/1 til 1/meny2.jpg" alt="Roastbiff sandwich">
           <div class="menyRettTekst">
             <h1>
               Roastbiff Sandwich <b class="pris">199,-</b>
@@ -111,7 +117,7 @@
       <div class="kolonne">
         <!--Kylling Sandwich-->
         <div class="menyRett">
-          <img class="menyBilde" src="img/1 til 1/meny3.jpg" alt="">
+          <img class="menyBilde" src="img/1 til 1/meny3.jpg" alt="Kylling sandwich">
           <div class="menyRettTekst">
             <h1>
               Kylling Sandwich  <b class="pris">189,-</b> 
@@ -119,7 +125,6 @@
             <br>
             <!-- Alergier -->
             <p>
-
               🚫
             </p>
             <p>
@@ -130,7 +135,7 @@
         
         <!--Småpizza M/Urter-->
         <div class="menyRett">
-          <img class="menyBilde" src="img/1 til 1/meny4.jpg" alt="">
+          <img class="menyBilde" src="img/1 til 1/meny4.jpg" alt="Småpizza med urter">
           <div class="menyRettTekst">
             <h1>
               Småpizza M/Urter  <b class="pris">169,-   </b> 
@@ -153,7 +158,7 @@
       <div class="kolonne">
         <!--Vegetarquesedilla-->
         <div class="menyRett">
-          <img class="menyBilde" src="img/1 til 1/meny5.jpg" alt="">
+          <img class="menyBilde" src="img/1 til 1/meny5.jpg" alt="Vegetarquesedilla">
           <div class="menyRettTekst">
             <h1>
             Vegetarquesedilla  <b class="pris">159,-</b> 
@@ -171,7 +176,7 @@
         
         <!--Avokdo Toast-->
         <div class="menyRett">
-          <img class="menyBilde" src="img/1 til 1/meny6.jpg" alt="">
+          <img class="menyBilde" src="img/1 til 1/meny6.jpg" alt="Avokado Toast">
           <div class="menyRettTekst">
             <h1>
               Avokado Toast  <b class="pris">159,-</b> 
@@ -201,7 +206,7 @@
      
        <!--Entrecôte-->
       <div class="menyRett">
-        <img class="menyBilde" src="img/1 til 1/meny7.jpg" alt="">
+        <img class="menyBilde" src="img/1 til 1/meny7.jpg" alt="Entrecôte">
         <div class="menyRettTekst">
           <h1>
             Entrecôte   <b class="pris">359,-</b> 
@@ -222,7 +227,7 @@
     <!--Indrefilet-->
     
     <div class="menyRett">
-      <img class="menyBilde" src="img/1 til 1/meny8.jpg" alt="">
+      <img class="menyBilde" src="img/1 til 1/meny8.jpg" alt="Indrefilet">
       <div class="menyRettTekst">
         <h1>
           Indrefilet  <b class="pris">399,-</b>
@@ -244,7 +249,7 @@
   <div class="kolonne">
     <!--Torsk-->
     <div class="menyRett">
-      <img class="menyBilde" src="img/1 til 1/meny9.jpg" alt="">
+      <img class="menyBilde" src="img/1 til 1/meny9.jpg" alt="Torsk fra lofoten">
       <div class="menyRettTekst">
         <h1>
           Torsk fra Lofoten   <b class="pris">289,-</b> 
@@ -262,7 +267,7 @@
     
     <!--Fish & Chips-->
     <div class="menyRett">
-      <img class="menyBilde" src="img/1 til 1/meny10.jpg" alt="">
+      <img class="menyBilde" src="img/1 til 1/meny10.jpg" alt="Fish & Chips">
       <div class="menyRettTekst">
         <h1>
           Fish & Chips  <b class="pris">269,-   </b> 
@@ -285,7 +290,7 @@
   <div class="kolonne">
     <!--Vegetarfajitas-->
     <div class="menyRett">
-      <img class="menyBilde" src="img/1 til 1/meny11.jpg" alt="">
+      <img class="menyBilde" src="img/1 til 1/meny11.jpg" alt="Vegetarfajitas">
       <div class="menyRettTekst">
         <h1>
           Vegetarfajitas   <b class="pris">159,-</b> 
@@ -303,7 +308,7 @@
     
     <!--Veganbowl-->
     <div class="menyRett">
-      <img class="menyBilde" src="img/1 til 1/meny12.jpg" alt="">
+      <img class="menyBilde" src="img/1 til 1/meny12.jpg" alt="Veganbowl">
       <div class="menyRettTekst">
         <h1>
           Veganbowl   <b class="pris">159,-</b> 
@@ -333,7 +338,7 @@
    
      <!--Brownies-->
     <div class="menyRett">
-      <img class="menyBilde" src="img/1 til 1/meny13.jpg" alt="">
+      <img class="menyBilde" src="img/1 til 1/meny13.jpg" alt="Brownies">
       <div class="menyRettTekst">
         <h1>
           Brownies   <b class="pris">59,-</b> 
@@ -354,7 +359,7 @@
   <!--Husets egen eplekake-->
   
   <div class="menyRett">
-    <img class="menyBilde" src="img/1 til 1/meny14.jpg" alt="">
+    <img class="menyBilde" src="img/1 til 1/meny14.jpg" alt="Eplekake">
     <div class="menyRettTekst">
       <h1>
         Husets egen eplekake  <b class="pris">99,-</b>
@@ -376,7 +381,7 @@
 <div class="kolonne">
   <!--Mango Sago-->
   <div class="menyRett">
-    <img class="menyBilde" src="img/1 til 1/meny15.jpg" alt="">
+    <img class="menyBilde" src="img/1 til 1/meny15.jpg" alt="Mango sago">
     <div class="menyRettTekst">
       <h1>
         Mango Sago   <b class="pris">89,-</b> 
@@ -393,7 +398,7 @@
   
   <!--Mango sorbet-->
   <div class="menyRett">
-    <img class="menyBilde" src="img/1 til 1/meny16.jpg" alt="">
+    <img class="menyBilde" src="img/1 til 1/meny16.jpg" alt="Mango sorbet">
     <div class="menyRettTekst">
       <h1>
         Mangosorbet <b class="pris">69,-   </b> 
@@ -416,7 +421,7 @@
 <div class="kolonne">
   <!--Smuldre pai -->
   <div class="menyRett">
-    <img class="menyBilde" src="img/1 til 1/meny17.jpg" alt="">
+    <img class="menyBilde" src="img/1 til 1/meny17.jpg" alt="Smuldre pai">
     <div class="menyRettTekst">
       <h1>
         Smuldre pai    <b class="pris">59,-</b> 
@@ -434,7 +439,7 @@
   
   <!--Pannekaker-->
   <div class="menyRett">
-    <img class="menyBilde" src="img/1 til 1/meny18.jpg" alt="">
+    <img class="menyBilde" src="img/1 til 1/meny18.jpg" alt="Pannekaker">
     <div class="menyRettTekst">
       <h1>
         Pannekaker   <b class="pris">59,-</b> 
@@ -458,17 +463,13 @@
     
     
     
-    
-    
+
     
     
     
     <!-- footer med Åpningstider og generell informasjon om resturangen -->
-    <section>
-      <div class="innpakning reveal">
-        <div class="innhold">
-            <footer>
               <!-- Åpningstider -->
+              <footer>
               <div class="footerboks">
               <div class="kolonnefooter">
                 <div class="kontakt">
@@ -495,11 +496,6 @@
               </div>
               </div>
             </footer>
-        </div>
-      </div>
-    </section>
-  
-
 
   </body>
 
@@ -522,34 +518,5 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-
-
-      // kode fra https://alvarotrigo.com/blog/css-animations-scroll/
-        //funksjonen som viser footeren
-        function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-          //Window innerHeight-egenskapen brukes til å returnere høyden på et vindus innholdsområde
-          //returnerer et tall som representerer høyden på nettleservinduets innholdsområde i piksler.
-          var skjermHoyde = window.innerHeight;
-          //returner størrelsen på et element og elements posisjon i forhold til skjermen
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          //elementet er synlig etter 150 px;
-          var visning = 150;
-
-         //if setning for å vise eller skule footeren 
-         if (elementTop < skjermHoyde - visning) {
-            //legger till klassen aktiv
-            reveals[i].classList.add("aktiv");
-          } 
-          else {
-            //fjerner klassen aktiv
-            reveals[i].classList.remove("aktiv");
-          }
-        }
-      }
-      //starter funksjonen
-      window.addEventListener("scroll", reveal);
 </script>
 </html>

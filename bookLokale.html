@@ -12,29 +12,26 @@
   <div id="bakgrunnBilde2">
   <div id="bakgrunnBilde1">
     <!--Header-->
-    <header>
-        <div class="bildeBakgrunn">
-          <div class="header">
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
-            <a href="index.html">Welcome</a>
-            <a href="booking.html">Booking</a>
-            <a href="meny.html">Meny</a>
-            <a href="accessibility.html">Accessibility</a>
-            <a href="topical_page.html">Topical Page</a>
-              <div class="bildeTekstBooking">
-                <h1>Booking<br><br></h1>
-              </div>
-         
-          </div>
-        </div>
-      </header>
+    <header class="headerBildeBakgrunn">
+      
+      <a class="logoLenke" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
+      <div class="headerLenkeContainer">
+        <a href="index.html">Welcome</a>
+        <a href="booking.html">Booking</a>
+        <a href="meny.html">Meny</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topical_page.html">Topical Page</a>
+
+      </div>
+    
+  </header>
          <!-- knapp for å ta deg tilbake til topp av siden -->
       <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
       
 
-    <div class="book-boks div-tema">
+    <div class="book-boks">
     <h2>Book lokale</h2>
-    
+    <!-- Teksten til å fylle ut skjemaet -->
     <div class="input-boks">
       <input type="Username" required name="fname">
       <label>Navn</label>
@@ -74,6 +71,7 @@
     </div>
   
   
+    <!-- For å varsle at knappen fungerer og forespørselen er sendt -->
     <button class="button" onclick="alert('Forespørselen er sendt!')" type="submit">
     Send forespørsel
     </button>

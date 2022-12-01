@@ -1,24 +1,20 @@
+/* Bakgrunnsbildent høyre side */
 #bakgrunnBilde1{
-    background-image: url(../img/bokking_bakgrunn/langbord.png);
+    background-image: url(../img/booking_bakgrunn/langbord.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
     background-position: right;
 }
+/* Bakgrunnsbildent venstre side */
 #bakgrunnBilde2{
-    background-image: url(../img/bokking_bakgrunn/langbord.png);
+    background-image: url(../img/booking_bakgrunn/langbord.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
     background-position: left;
-    
 }
-
-
-.info h2{
-    text-align: center;
-    border-bottom: white solid;
-}
+/* alt rundt info-boksen */
 .info{
     margin: 20px auto 20px auto;
     width: 400px;
@@ -26,7 +22,11 @@
     background-color: rgb(70, 70, 70);
     border-radius: 10px;
     border-bottom: white solid;
-   
+}
+
+.info h2{
+    text-align: center;
+    border-bottom: white solid;
 }
 
 /* teksten inne i info */
@@ -35,14 +35,15 @@
     margin:auto;
     padding: 20px;
     background-color: rgb(70, 70, 70);
-    height: 530px;
+    height: 570px;
     width: 300px;
     font-style: italic;
 }
+/* for å skille ut URL- */
 .bookingInfo a{
     color: rgb(146, 207, 245);/*Link til lokalet*/
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .bookingInfo b{
     text-decoration-line: underline ;
@@ -70,11 +71,11 @@
 
 
 /* fjerner den globale box-shadow på alle diver */
-.input-boks{
+/* .input-boks{
     box-shadow: none;
-}
+} */
 .book-boks h2 {
-    /*      top left bot        */
+    /*      top right bot        */
     margin: 0px 0px 30px;
     /*       nesten umerkbart   */
     padding: 0px;

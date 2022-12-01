@@ -1,117 +1,59 @@
-/* angir utsenede på header'en */
-/* setter bile som bakgrunn i header'en */
-.bildeBakgrunn{
-    text-align: center;
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)) ,url(../img/Resturant_bakgrunn.jpg);
+/* Header Bilde Bakgrunn ___________________________________________________________________________________________________*/
+.headerBildeBakgrunn{
+    /* ../img/Resturant_bakgrunn.jpg */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.5)) , url(../img/Resturant_bakgrunn.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    background-position: 50%;
-    width: 100%;
-    height: 700px;
-}
-/* putter Stanley Restaurant & Catering sin logo i center */
-.bildeTekst{
-    text-align: center;
-    width: 540px;
-    margin: auto;
-    padding-top: 100px;
-    color: rgb(255, 255, 255);
-    border-bottom: 5px solid #dfdfdf;
-   }
-   .bildeTekstBooking{
-    text-align: center;
-    width: 220px;
-    margin: auto;
-    padding-top: 100px;
-    color: rgb(255, 255, 255);
-    border-bottom: 5px solid #dfdfdf;
-   }
-   .bildeTekstMeny{
-    text-align: center;
-    width: 150px;
-    margin: auto;
-    padding-top: 100px;
-    color: rgb(255, 255, 255);
-    border-bottom: 5px solid #dfdfdf;
-   }
-   .bildeTekstAccessibility{
-    text-align: center;
-    width: 320px;
-    margin: auto;
-    padding-top: 100px;
-    color: rgb(255, 255, 255);
-    border-bottom: 5px solid #dfdfdf;
-   }
-   .bildeTekstTopical{
-    text-align: center;
-    width: 200px;
-    margin: auto;
-    padding-top: 100px;
-    color: rgb(255, 255, 255);
-    border-bottom: 5px solid #dfdfdf;
-   }
-/* angir utsende for skriften */
-.header h1{
-    color: #dfdfdf;
-    font-size: 50px;
+    background-attachment: fixed;
+    
+    padding-bottom: 1px;
+
+    /* 50% gjøt at bildet altid er sentrert */
+    /* 140% gjør at vi kan se kokken når bredden til siden er større enn 1000px */
+    background-position: 50% 100%;
 }
 
-/* angir header'en */
-.header{
-    text-align: center;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0px 50px 0px;
-    margin-bottom: 30px;
-}
-/* angir utsende p[ linkene til de andre sidene */
-.header a{
-    color: #ffffff;
-    padding-bottom: 20px;
-    font-size: 20px;
-    /*border-bottom: white solid;*/
-}
-/* teksten endrer farge når du holder musepekeren over */
-.header a:hover{
-    color: #767676;
-    border-bottom: 5px solid white;
+/* Logo ___________________________________________________________________________________________________*/
+.logo{
+    height: 100px;
+    margin: 20px;
 }
 
-.ingridienser{
-    font-size: 20px;
-    margin: 0px;
+/* alle lenker har i utgandspunk padding: 10 */
+.logoLenke{
     padding: 0px;
 }
-.logo{
-    padding-top: 30px;
-    width: 10%;
-    height: auto;
-    margin: auto;
-/*     float: left;
-    position: relative;
-    top: -35px;
-    left: 70px; */
-    border-radius: 50%;
+
+/* Knapper ___________________________________________________________________________________________________*/
+.headerLenkeContainer{
+    text-align: center;
+}
+.headerLenkeContainer a {
+    font-size: 30px;
+    color: #fff;
 }
 
-.header br{
+.headerLenkeContainer br{
     display: none;
 }
-@media (max-width: 1000px) {.header a, .bildeTekst{
-    padding-top: 10px;
-    display: block;
+
+/* Header tekst ___________________________________________________________________________________________________*/
+
+.headerOverskriftContainer{
     width: fit-content;
-    margin: auto;
-    margin-top: 15px;
-
-  }}
-@media (max-width: 1000px) {.header a{
+    padding: 10px;
+    margin: 100px auto 100px auto;
+    border-bottom: 5px solid #fff;
+}
+.headerOverskriftContainer h1{
     font-size: 50px;
-}}
+}
+
+/* max-width:1000px ___________________________________________________________________________________________________*/
+@media (max-width:1000px){.headerLenkeContainer a, .headerLenkeContainer br{
+    font-size: 50px;    /* .headerLenkeContainer a */
+    display: block;     /* .headerLenkeContainer br */
+  }}
 
 
-/* denne median er så alt i hedderen ikke beveger seg når man "hover" over et a ellement i header */
-@media (max-width: 1000px) {.header a:hover{
-    padding-bottom: 15px;
-}}
+
