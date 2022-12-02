@@ -109,9 +109,11 @@
 }
 
 /* https://stackoverflow.com/questions/2789741/how-can-i-set-the-background-color-of-option-in-a-select-element */
+/* setter bakgrunnsfarge */
 select option {
     background-color: #d7d7d7;
 }
+/* styler teksten inne i input-boks divene */
 .book-boks .input-boks label {
     position: absolute;
     top: 0px;
@@ -123,6 +125,7 @@ select option {
     color: #101010;;
     transition: 0.5s;
 }
+/* setter posisjonene til label tagen */
 .book-boks .input-boks input:focus ~ label,
 .book-boks .input-boks input:valid ~ label {
     top: -18px;
@@ -130,6 +133,7 @@ select option {
     color: rgb(50, 53, 53);
     font-size: 12px;
 }
+/* styler knappen */
 .book-boks button[type = "submit"]{
     background: transparent;
     border: none;
@@ -141,6 +145,7 @@ select option {
     width: 100%;
     border: 5px#000000 solid;
 }
+/* knappen endrer fargen når du holder over knappen */
 .book-boks button[type = "submit"]:hover{
     background-color: #fff;
     color: #000000;
@@ -150,12 +155,14 @@ select option {
 
 
 /*BUTTON KNAPPER TIL BOOOKING*/
+/* diven rundt knappene til bookbord.html og bookLokale.html */
 .bookingKnapper{
     text-align: center;
     justify-content: center;
     margin: auto;
     padding-top: 20px;
 }
+/* styler selve knappen inne i bookingKnapper diven */
 .Knapp{
     border: none;
     outline: 0;
@@ -170,8 +177,8 @@ select option {
 
 
 
-
-/* Telefon  under 1000px */
+/* For telefon under 1000px */
+/*  */
 @media (max-width: 1000px) {.info { 
     /* display: block;   */ 
     font-size: 14px;

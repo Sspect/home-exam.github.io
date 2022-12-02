@@ -60,7 +60,7 @@ a{
     padding: 10px;
     font-size: 20px;
     text-decoration: none;
-    color: rgb(143, 0, 0);
+    color: #BBB3FF;
 }
 /* tekstfargen og museperkeren endres når du holder over a tagen */
 a :hover{
