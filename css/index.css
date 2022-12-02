@@ -38,7 +38,7 @@
     transform: translate(-50%, -50%);
     color: white;
 }
-.boksTekst .boksTekst h1:hover{
+.b:hover{
     color: aqua;
 }
 
@@ -62,6 +62,19 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url("../img/sosiale_medier.jpg");
 }
+/* underlinje til boksene____________________________________________________________________________ */
+
+.underlinje{
+    border-radius: 10px;
+    background-color: rgb(143, 0, 0);     /* farge på underlinja */
+    height: 6px;                            /* høyden (tykkelsen) på underlinja */
+    transform: scaleX(0);                   /* "bredden på underlinja før transformation" */
+    transition: 0.4s;                       /* "transformation speed" */
+  }
+.boksMedUnderlinje:hover .underlinje{
+    transform: scaleX(1);
+}
+
 
 
 

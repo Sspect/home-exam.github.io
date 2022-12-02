@@ -88,7 +88,7 @@
   }}
 
 @media (max-width:1000px){.logo{
-    display: block;     /* block og marin: aut gjør at logon sentreres */
+    display: block;     /* block og marin: utgjør at logon sentreres */
     margin: auto;
     padding-top: 20px;  /* legger til mellomrom mellom logoen og toppen a siden */
     height: 250px;      /* endrer størelsen på logoen */

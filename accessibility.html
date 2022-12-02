@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
     <!-- Inportering av css -->
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/accessibility.css">  
 </head>
 <body>
     <!-- Header -->
@@ -18,7 +19,7 @@
       <div class="headerLenkeContainer">
         
         <div class="knappContainer">                        <!-- Knapp Container -->
-          <a class="knapp" href="index.html">Home</a>    <!-- Knapp -->
+          <a class="knapp" href="index.html">Hjem</a>    <!-- Knapp -->
           <div class="underlinje"></div>                    <!-- Underlinje -->
         </div>
 
@@ -33,37 +34,37 @@
         </div>
         
         <div class="knappContainer">                        <!-- Knapp Container -->
-          <a class="knapp" href="accessibility.html">Accessibility</a>    <!-- Knapp -->
+          <a class="knapp" href="accessibility.html">Tilgjenglighet</a>    <!-- Knapp -->
           <div class="underlinje"></div>                    <!-- Underlinje -->
         </div>
 
         <div class="knappContainer">                        <!-- Knapp Container -->
-          <a class="knapp" href="topical_page.html">Topical Page</a>    <!-- Knapp -->
+          <a class="knapp" href="topical_page.html">Aktuell side</a>    <!-- Knapp -->
           <div class="underlinje"></div>                    <!-- Underlinje -->
         </div>
 
       </div>
           <div class="headerOverskriftContainer">
-            <h1>Accessibility</h1>
+            <h1>Tilgjenglighet</h1>
           </div>
     
     </header>
+    
+    
      <!-- knapp for å ta deg tilbake til topp av siden -->
      <a href="#toppAvSiden"><button id="topknapp">&#x2191</button></a>
 
 
-    <p>
+    <div class="BakgrunnAccess">
       <strong>
         4. Accessibility page: 
       </strong>
-        A very short text (max 500 words) about how you tested the code for accessibility using an 
-        automated test. How you checked, and coding choices you made for universal design beyond what 
-        an automated test could tell you. You are welcome to use screenshots from the testing site and of 
-        your code.  
-        
-        We shall read this text! While the content of your site is but a minor part of the assessment, this is 
-        the text that we are certain to read. 
-    </p>
+        <p>Det ble brukt WAVE https://wave.webaim.org/ for å teste koden sin brukervennlighet. Det var en ting som gikk igjen, det var kontraster på siden.
+           Siden websiden har en mørk bakgrunn, er det viktig med en klar kontrast mellom bakgrunnen og teksten.  
+           Sett på den tidligere meny-siden var kontrasten mellom rød pris, og mørk bakgrunn for liten. 
+           Fargen som ble valgt var en farge som ga websiden en bedre score, men samtidig løftet det websiden med farger som var mer lik bildene vi har på matrettene.   </p>
+           <img src="" alt="">
+    </div>
     <script>
     </script>
 </body>
