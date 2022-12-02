@@ -54,51 +54,21 @@ h1 {
 p {
     color: rgb(255, 255, 255);
 }
-/* standar styling for  */
+/* standar styling for a tagen */
 a{
     height: auto;
     padding: 10px;
     font-size: 20px;
     text-decoration: none;
-    color: rgb(58, 58, 255);
+    color: rgb(143, 0, 0);
 }
+/* tekstfargen og museperkeren endres når du holder over a tagen */
 a :hover{
     color: #767676;
     cursor: pointer;
 }
-
-
-img {
-    height: 100%;
-}
-
-.profil-bilde{
-    float: right;
-    height: 150px;
-    margin: 20px;
-    border-radius: 100px;
-    border: #003f45 3px solid;
-}
-
-
-
-
-/* Velkommen diven under headeren */
-.div-tema2{
-    width: 100%; 
-    box-shadow: 0px -80px 80px rgba(0, 0, 0, 0.781);
-    padding-bottom: 40px;
-}
-
-/* sentrerer teksten */         /*  Welkommen */
-.div-tema2 p, .div-tema2 h1 {
-    color: white;
-    text-align: center;
-}
-.div-tema2 h1{
-    border-bottom: solid 5px white;
-}
-
+/* stylingen for knappen nederst i høyre hjørne */
+/* setter utsende og posisjonen til knappen */
 #topknapp {
     display: block;
     position: fixed;
@@ -114,10 +84,10 @@ img {
     padding: 15px;
     border-radius: 4px;
   }
-  #topknapp:hover {
+  /* backgrunnsfargen blir mørkere når du holder over knappen */
+#topknapp:hover {
     background-color: #555;
-  }
-  
+}
 /* styler footeren  */
 footer {
     padding-top: 10px;
@@ -150,10 +120,11 @@ footer {
   /* sentrerer p elementene i kontakt og åpning divene */
   .kontakt p, .åpning p{
     text-align: center;
+    margin-right: 5px;
   }
   
 /* For telefon med bredde mindre enn 1000px */
-/* legger kontakt og åpningsdivene under hverandre og setter bredden til 100% */
+/* legger kontakt og åpning divene under hverandre og setter bredden til 100% */
 @media (max-width: 1000px) {.åpning, .kontakt, .kolonnefooter{
   display: block;
   width: 100%;

@@ -23,7 +23,7 @@
     border-radius: 10px;
     border-bottom: white solid;
 }
-
+/* sentrerer h2 tagen */
 .info h2{
     text-align: center;
     border-bottom: white solid;
@@ -45,17 +45,16 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+/* for å understreke underoverskriftene */
 .bookingInfo b{
     text-decoration-line: underline ;
     text-decoration-thickness: 2px;
     color: white;
 }
 
-
-
 /*TIL BOOKINGBOKSENE I BOOKBORD OG BOOKLOKALE*/
 
-
+/* dette er selve boksen alle input elementene er inni */
 .book-boks{
     background-color: #8a8a8a;
     display: block;
@@ -63,28 +62,25 @@
     width: 400px;
     padding: 40px;
     box-sizing: border-box;
-    /*          rgt  bot  røyk     */
+    /*          rgt  bot  smoke     */
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     border-bottom: black solid;
 }
-
-
-/* fjerner den globale box-shadow på alle diver */
-/* .input-boks{
-    box-shadow: none;
-} */
+/* h2 tagene i booking */
 .book-boks h2 {
-    /*      top right bot        */
+    /*      top right bottom        */
     margin: 0px 0px 30px;
     /*       nesten umerkbart   */
     padding: 0px;
     text-align: center;
     color: #101010;
 }
+/* setter divenes posisjon  */
 .book-boks .input-boks{
     position: relative;
 }
+/* definerer utsende på input tagen */
 .book-boks .input-boks input{
     background: transparent;
     color: #101010;
@@ -97,6 +93,7 @@
     outline: none;
     border-bottom: 5px #101010 solid;
 }
+/* definerer utsende på select tagen */
 .book-boks .input-boks select{
     color: #101010;
     width: 100%;

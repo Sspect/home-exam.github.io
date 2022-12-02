@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <!--
   Index.html should be a general information page that helps the
   visitor understand what this site is about and navigate to the
@@ -17,68 +18,88 @@
     <title>Sanley resturant</title>
     
   </head>
-  <body>
-    <!--Header-->
-    <header class="headerBildeBakgrunn">
+    <body>
+      <!--Header-->
+      <header class="headerBildeBakgrunn" id="toppAvSiden">
       
         <a class="logoLenke" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
         <div class="headerLenkeContainer">
-          <a href="index.html">Welcome</a> <br>
-          <a href="booking.html">Booking</a><br>
-          <a href="meny.html">Meny</a><br>
-          <a href="accessibility.html">Accessibility</a><br>
-          <a href="topical_page.html">Topical Page</a><br>
+          
+          <div class="knappContainer">                        <!-- Knapp Container -->
+            <a class="knapp" href="index.html">Home</a>    <!-- Knapp -->
+            <div class="underlinje"></div>                    <!-- Underlinje -->
+          </div>
+
+          <div class="knappContainer">                        <!-- Knapp Container -->
+            <a class="knapp" href="booking.html">Booking</a>    <!-- Knapp -->
+            <div class="underlinje"></div>                    <!-- Underlinje -->
+          </div>
+
+          <div class="knappContainer">                        <!-- Knapp Container -->
+            <a class="knapp" href="meny.html">Meny</a>    <!-- Knapp -->
+            <div class="underlinje"></div>                    <!-- Underlinje -->
+          </div>
+          
+          <div class="knappContainer">                        <!-- Knapp Container -->
+            <a class="knapp" href="accessibility.html">Accessibility</a>    <!-- Knapp -->
+            <div class="underlinje"></div>                    <!-- Underlinje -->
+          </div>
+
+          <div class="knappContainer">                        <!-- Knapp Container -->
+            <a class="knapp" href="topical_page.html">Topical Page</a>    <!-- Knapp -->
+            <div class="underlinje"></div>                    <!-- Underlinje -->
+          </div>
+
+        </div>
             <div class="headerOverskriftContainer">
               <h1>Stanley Restaurant & Catering</h1>
             </div>
-        </div>
       
-    </header>
-    <!-- knapp for å ta deg tilbake til topp av siden -->
-    <!-- <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
-     -->
+      </header>
+      <!-- knapp for å ta deg tilbake til topp av siden -->
+      <a href="#toppAvSiden"><button id="topknapp">&#x2191</button></a>
 
 
-  <div class="parent"><!-- div for å holde boksene sentrert -->
-    <!-- Booking boks -->
-    <!-- div-tema er skygge -->
-    <a href="booking.html">
-      <div class="box-right div-tema" id="bookingBoks">
-        <div class="boksTekst">
-          <h1>Book bord <br>eller<br> lokale</h1>
-        </div>
-      </div>  
-    </a>
+      <div class="parent"><!-- div for å holde boksene sentrert -->
+        <!-- Booking boks -->
+       <!-- div-tema er skygge -->
+       <a href="booking.html">
+        <div class="box-right div-tema" id="bookingBoks">
+         <div class="boksTekst">
+            <h1>Booking</h1>
+         </div>
+       </div>  
+       </a>
 
-    <!-- Meny box -->
-    <a href="meny.html">
-      <div class="box-left div-tema" id="menyBoks">
-        <div class="boksTekst">
-          <h1>Meny</h1>
-        </div>
-      </div>
-    </a>
+      <!-- Meny box -->
+        <a href="meny.html">
+        <div class="box-left div-tema" id="menyBoks">
+         <div class="boksTekst">
+            <h1>Meny</h1>
+          </div>
+         </div>
+        </a>
 
-    <!-- Accessibility boks -->
-    <a href="accessibility.html">
-      <div class="box-right div-tema" id="accessibilityBoks">
+        <!-- Accessibility boks -->
+        <a href="accessibility.html">
+        <div class="box-right div-tema" id="accessibilityBoks">
         <div class="boksTekst">
           <h1>Accessibility page</h1>
         </div>
-      </div>
-    </a>
+        </div>
+        </a>
 
-    <!-- Topical page boks -->
-    <a href="topical_page.html">
-      <div class="box-left div-tema" id="topicalBoks">
+        <!-- Topical page boks -->
+       <a href="topical_page.html">
+       <div class="box-left div-tema" id="topicalBoks">
         <div class="boksTekst">
           <h1 >Topical page</h1>
         </div>
-      </div>
-    </a>
-  </div>
+       </div>
+       </a>
+        </div>
 
-    <!-- footer med Åpningstider og generell informasjon om resturangen -->
+          <!-- footer med Åpningstider og generell informasjon om resturangen -->
 
         <footer>
           <!-- Åpningstider -->
@@ -116,23 +137,5 @@
 
    
   <script>
-      //script for knappen som tar deg til toppen av siden 
-      // henter knappen 
-      var topknapp = document.querySelector("#topknapp");
-      // når brukeren scroller ned 20 px fra toppen av siden vises knappen
-      window.onscroll = function() {scrollFunction()};
-      //funksjon for vise knappen eller ikke
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topknapp.style.display = "block";
-        } else {
-          topknapp.style.display = "none";
-        }
-      }
-      // når brukeren clicker på knappen, kommer brukeren til toppen av sden
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
   </script>
 </html>

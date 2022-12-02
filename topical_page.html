@@ -12,38 +12,59 @@
 
 <body>
     <!-- Header -->
-    <header class="headerBildeBakgrunn">
+    <header class="headerBildeBakgrunn" id="toppAvSiden">
       
       <a class="logoLenke" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
       <div class="headerLenkeContainer">
-        <a href="index.html">Welcome</a>
-        <a href="booking.html">Booking</a>
-        <a href="meny.html">Meny</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topical_page.html">Topical Page</a>
+        
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="index.html">Home</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="booking.html">Booking</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="meny.html">Meny</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+        
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="accessibility.html">Accessibility</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="topical_page.html">Topical Page</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+      </div>
           <div class="headerOverskriftContainer">
             <h1>Topical Page</h1>
           </div>
-      </div>
     
-  </header>
+    </header>
 
      <!-- knapp for å ta deg tilbake til topp av siden -->
-     <a href=".headerBildeBakgrunn"><button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button></a>
+     <a href="#toppAvSiden"><button id="topknapp">&#x2191</button></a>
 
-    <div class="bakgrunn">
       
       <div class="overskrift">
         <h1>1.1 The interplay between technology and society </h1>
         </div>
       <div class="topicalinnhold">
         
-        <div class="innledning">
+        <div class="topicalTekst">
           <p> 
             <b>How can a mobile phone be understood through the lense of your field of study
                and what do you think are the social implications of it? (From module 1.1) </b>
           </p>
           <br> <br>
+          
         
           <h2>Mobiltelefonen</h2>
           <p>
@@ -80,21 +101,29 @@
             samt for å beskytte brukeren mot ondsinnede koder og virus. 
             Denne teknologien er under kontinuerlig utvikling og gjør derfor denne bransjen svært attraktiv på arbeidsmarkedet. 
           </p>
+          
+         <div class=bildelitenskjerm >
+          <img src="img/sosiale_medier.jpg" alt="sosiale medier">
+           <p>
+              Forskjellige sosiale medier. Bildet er fra <a href=https://unsplash.com/photos/mr4JG4SYOF8>(Alexander Shatov, 20. januar 2021)</a><sup>[3]</sup></p>
+           </p>
+          </div> 
+        
+     
           <div class="kilder">
           
-            <p><sup>[1]</sup><a href="https://snl.no/mobiltelefoni">https://snl.no/mobiltelefoni</a>Harald Øverby, (14. juli 2022) &#128509;<br>
-            <sup>[2]</sup><a href="https://unsplash.com/photos/6wdRuK7bVTE">https://unsplash.com/photos/6wdRuK7bVTE</a>, (Neil Soni, 8. april 2018)&#128508;</p>
+            <p><sup>[1]</sup><a href="https://snl.no/mobiltelefoni">https://snl.no/mobiltelefoni</a>Harald Øverby, (14. juli 2022)<br>
+            <sup>[2]</sup><a href="https://unsplash.com/photos/6wdRuK7bVTE">https://unsplash.com/photos/6wdRuK7bVTE</a>, (Neil Soni, 8. april 2018)
+            <sup>[3]</sup><a href=https://unsplash.com/photos/mr4JG4SYOF8>https://unsplash.com/photos/mr4JG4SYOF8</a>, (Alexander Shatov, 20. januar 2021)</p>
            
           </div>
+          </div>   
           
-          
-        </div>
-          <div class="topicalBilde">
-            <img id="bilde" src="img/telefon.jpg" alt="telefon">
+        <div class="topicalBilde">
+            <img src="img/telefon.jpg" alt="Bilde av telefon som svever">
             <p>
               Smarttelefon med applikasjoner på skjermen. Bildet er fra <a href="https://unsplash.com/photos/6wdRuK7bVTE">(Neil Soni, 2018)</a><sup>[2]</sup></p>
           </div>
-          
       </div>
       
 
@@ -131,6 +160,5 @@
               </div>
             </footer>
     <script>
-      
     </script>
 </body>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <!--
   A short text that explains what the place is about, how big it is, how many people may be seated 
   there, where in the city it is located, and how to make a reservation. Please have some text that is 
@@ -24,23 +25,45 @@
   <div id="bakgrunnBilde1">
   <div id="bakgrunnBilde2">
     <!--Header-->
-    <header class="headerBildeBakgrunn">
+    <header class="headerBildeBakgrunn" id="toppAvSiden">
       
       <a class="logoLenke" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
       <div class="headerLenkeContainer">
-        <a href="index.html">Welcome</a>
-        <a href="booking.html">Booking</a>
-        <a href="meny.html">Meny</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topical_page.html">Topical Page</a>
+        
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="index.html">Home</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="booking.html">Booking</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="meny.html">Meny</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+        
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="accessibility.html">Accessibility</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="topical_page.html">Topical Page</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+      </div>
           <div class="headerOverskriftContainer">
             <h1>Booking</h1>
           </div>
-      </div>
     
+    </header>
   </header>
      <!-- knapp for å ta deg tilbake til topp av siden -->
-  <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
+     <a href="#toppAvSiden"><button id="topknapp">&#x2191</button></a>
 
   <div class = "info">
     <h2>Velkommen til Stanley restaurant og catering </h2>
@@ -65,7 +88,7 @@
       I underetasjen har vi et lokale med en kapasitet på 100 gjester. 
       Her finner du to shuffelboard, samt et stort dansegulv for danseløven! 
       <br><br>
-      Ønsker <b>DU</b> å booke bord hos oss? Ta å klikk på linken under, så fikser vi bord til deg!
+      Ønsker <b>DU</b> å booke bord hos oss? Ta å klikk på linken under eller ring oss, så fikser vi bord til deg!
       <br> <br>
       Ønsker <b>DU</b> å leie hos oss? <b>Book oss da vel!</b> 
       Vi kan arrangere alt fra det fineste bryllupet, til det beste julebordet. 
@@ -113,24 +136,6 @@
 </div>
 </div>
 <script>    
-    //script for knappen som tar deg til toppen av siden 
-    // henter knappen 
-    var topknapp = document.querySelector("#topknapp");
-      // når brukeren scroller ned 20 px fra toppen av siden vises knappen
-      window.onscroll = function() {scrollFunction()};
-      //funksjon for vise knappen eller ikke
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topknapp.style.display = "block";
-        } else {
-          topknapp.style.display = "none";
-        }
-      }
-      // når brukeren clicker på knappen, kommer brukeren til toppen av sden
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
   </script>
 </body>
 </html>

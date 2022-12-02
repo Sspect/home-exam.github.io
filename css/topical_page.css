@@ -1,10 +1,10 @@
 /* Selve tekstboks der alle elementer er inkludert */
 .topicalinnhold{
     margin: auto;
-    width: 1100px;
-    height: 1000px;
+    max-width: 1100px;
+    min-height: 1000px;
     background-color: rgba(56, 51, 51, 0.601);
-    display: flex;    
+    display: flex;     
 }
 .topicalinnhold p{
    padding: 10px;
@@ -20,26 +20,31 @@
     text-align: center;
     text-decoration: underline 1px;
 }
+
 /* Bilder og bildetekst */
 .topicalBilde{
-    height: 700px;
+    max-width: 400px;
     position: relative;
     float: right;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-top: 100px;
+    
 }
 .topicalBilde p, a{
   margin-top: 0px;
   font-size: 14px;
 }
+.topicalBilde img{
+  max-width: 350px;
+}
 /* Innledning boks */
-.innledning {
-    width: 650px;
-    height: 400px;
+.topicalTekst {
+    max-width: 650px;
+    min-height: 400px;
 }
 /* Overskrift boks */
 .overskrift {
-    width: 1100px;
+    max-width: 1100px;
     background-color:rgba(56, 51, 51, 0.601);
     margin: auto;
     text-align: center;
@@ -51,35 +56,48 @@
 .overskrift h1{
     font-size: 30px;
 }
+
 /* Boks for kilder */
 .kilder{
   border-top: white solid;
   margin-top: 100px;
-  height: 100px;
+  min-height: 100px;
   background-color:  rgba(56, 51, 51, 0.601);
-  padding-left: 10px;
   
- 
+  
+}
+.bildelitenskjerm{
+  width: 100%;
+}
+.bildelitenskjerm p{
+  margin-top: 0px;
+  padding-top: 0px; 
+}
+.bildelitenskjerm img{
+  width:100%;
 }
 
-
-
-
-@media (max-width: 1100px) {.topicalinnhold, .overskrift, .kilder {
+@media (max-width: 1000px) {.topicalinnhold, .overskrift, .kilder , .topicalTekst{
+    font-size: 20px;
     width: 100%;
     margin: auto;
-    font-size: 20px;
-    
+    display: block;
   }}
-  
-@media (max-width: 1100px) {.topicalinnhold a{
-  font-size: 20px;
-  
-  
+  @media (max-width: 1000px) {.topicalinnhold a{
+    font-size: 20px;
+  }}
+
+
+ 
+@media (max-width: 1000px) {.kilder{
+  width: 100%;
 }}
-  @media (max-width: 1100px) {.topicalBilde{
-    height: 400px;
- }}
  @media (max-width: 1100px) {.topicalinnhold{
-  height: 1600px;
+  height: auto;
+}}
+@media (min-width: 1000px) {.bildelitenskjerm{
+  display: none;
+}}
+@media (max-width: 1000px) {.topicalBilde{
+  display: none;
 }}

@@ -12,23 +12,44 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="headerBildeBakgrunn">
+    <header class="headerBildeBakgrunn" id="toppAvSiden">
       
       <a class="logoLenke" href="index.html"><img class="logo" src="img/logo.png" alt="Stanley restaurant og catering logo"></a>
       <div class="headerLenkeContainer">
-        <a href="index.html">Welcome</a>
-        <a href="booking.html">Booking</a>
-        <a href="meny.html">Meny</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topical_page.html">Topical Page</a>
+        
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="index.html">Home</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="booking.html">Booking</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="meny.html">Meny</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+        
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="accessibility.html">Accessibility</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+        <div class="knappContainer">                        <!-- Knapp Container -->
+          <a class="knapp" href="topical_page.html">Topical Page</a>    <!-- Knapp -->
+          <div class="underlinje"></div>                    <!-- Underlinje -->
+        </div>
+
+      </div>
           <div class="headerOverskriftContainer">
             <h1>Accessibility</h1>
           </div>
-      </div>
     
-  </header>
+    </header>
      <!-- knapp for å ta deg tilbake til topp av siden -->
-    <button onclick="topFunction()" id="topknapp" title="Go to top">&#x2191</button>
+     <a href="#toppAvSiden"><button id="topknapp">&#x2191</button></a>
 
 
     <p>
@@ -44,24 +65,6 @@
         the text that we are certain to read. 
     </p>
     <script>
-        //script for knappen som tar deg til toppen av siden 
-      // henter knappen 
-      var topknapp = document.querySelector("#topknapp");
-      // når brukeren scroller ned 20 px fra toppen av siden vises knappen
-      window.onscroll = function() {scrollFunction()};
-      //funksjon for vise knappen eller ikke
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          topknapp.style.display = "block";
-        } else {
-          topknapp.style.display = "none";
-        }
-      }
-      // når brukeren clicker på knappen, kommer brukeren til toppen av sden
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
     </script>
 </body>
 </html>
