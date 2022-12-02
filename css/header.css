@@ -43,10 +43,11 @@
 /* Header tekst ___________________________________________________________________________________________________*/
 
 .headerOverskriftContainer{
-    width: fit-content;
     padding: 10px;
     margin: 100px auto 100px auto;
+    width: fit-content;
     border-bottom: 5px solid rgb(143, 0, 0);
+    text-align: center;
 }
 .headerOverskriftContainer h1{
     font-size: 50px;
@@ -82,7 +83,7 @@
 
 /* max-width:1000px ___________________________________________________________________________________________________*/
 @media (max-width:1000px){.headerLenkeContainer a, .headerLenkeContainer{
-    font-size: 50px;    /* .headerLenkeContainer a */
+    font-size: 70px;    /* .headerLenkeContainer a */
     display: block;     /* .headerLenkeContainer*/
   }}
 
@@ -92,6 +93,8 @@
     padding-top: 20px;  /* legger til mellomrom mellom logoen og toppen a siden */
     height: 250px;      /* endrer størelsen på logoen */
 }}
+
+
 
 
 

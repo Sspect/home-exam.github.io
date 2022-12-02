@@ -1,10 +1,10 @@
 /* diven som går rundt alle diven på index.html */
 /* holder divene på plass */
+/* alle box- classer er for boksene på indeks.html __________________________________________________________________________________*/
 .parent{
     width: 890px;
     margin: auto;
 }
-/* alle box- classer er for boksene på indeks.html */
 /* styling for diven som ligger på høyre side */
 .box-right{
     display: inline-block;
@@ -16,25 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
-}
-/* putter teksten i midten av divene */
-.boksTekst h1{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-/* gir bilde til booking boksen */
-#bookingBoks{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url("../img/resturanteBilde.jpg");
-}
-/* gir bilde til meny bokssen */
-#menyBoks{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url("../img/Roastbiff.jpg");
 }
 /* styling for diven som ligger på venstre side */
 .box-left{
@@ -48,6 +29,29 @@
     background-size: cover;
     position: relative;  
 }
+/* putter teksten i midten av divene */
+.boksTekst h1{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.boksTekst .boksTekst h1:hover{
+    color: aqua;
+}
+
+/* gir bilde til booking boksen */
+#bookingBoks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../img/resturanteBilde.jpg");
+}
+/* gir bilde til meny bokssen */
+#menyBoks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../img/Roastbiff.jpg");
+}
 /* gir bilde til accessibility boksen */
 #accessibilityBoks{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -58,6 +62,9 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url("../img/sosiale_medier.jpg");
 }
+
+
+
 /* For telefon med bredde mindre enn 1000px */
 /* setter div boksene til bredde 80% og setter diven til display block isteden for inline-block */
 @media (max-width: 1000px) {.box-right, .box-left {
