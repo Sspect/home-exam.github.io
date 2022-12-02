@@ -14,7 +14,7 @@
     color: rgb(199, 196, 243);
     font-family: Arial, Helvetica, sans-serif;
     padding: 1px;
-
+    font-style: italic;
 }
 .topicalinnhold h2{
     text-align: center;
@@ -65,22 +65,21 @@
 
 
 
-@media (max-width: 1100px) {.topicalinnhold, .overskrift, .kilder{
+@media (max-width: 1100px) {.topicalinnhold, .overskrift, .kilder {
     width: 100%;
     margin: auto;
-    font-size: 40px;
-    
-    
+    font-size: 20px;
     
   }}
   
-@media (max-width: 1100px) {.topicalinnhold{
+@media (max-width: 1100px) {.topicalinnhold a{
+  font-size: 20px;
   
   
 }}
   @media (max-width: 1100px) {.topicalBilde{
-    width: 30%;
-    
-
-    
+    height: 400px;
  }}
+ @media (max-width: 1100px) {.topicalinnhold{
+  height: 1600px;
+}}
