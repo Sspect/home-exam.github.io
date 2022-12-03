@@ -1,107 +1,87 @@
-/* diven som går rundt alle diven på index.html */
-/* holder divene på plass */
-/* alle box- classer er for boksene på indeks.html __________________________________________________________________________________*/
-.parent{
-    width: 890px;
+.boksParContainer{
+    width: 90%;
     margin: auto;
+    display: flex;
 }
-/* styling for diven som ligger på høyre side */
-.box-right{
-    display: inline-block;
-    clear: both; 
-    margin: 50px auto auto auto; 
-    height: 400px;
-    width: 400px;
+
+.boksParContainer a{
+    width: 100%;
+    padding: 0px;/* fjerner den styleshhet sin padding: 10px */
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+.indeksBoks {
+    border-radius: 30px;
+    height: 250px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+.animasjonContainer {
     position: relative; 
-}
-/* styling for diven som ligger på venstre side */
-.box-left{
-    display: inline-block;
-    clear: both;
-    margin: 50px auto auto auto;
-    height: 400px;
-    width: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;  
-}
-/* putter teksten i midten av divene */
-.boksTekst h1{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-.b:hover{
-    color: aqua;
-}
+    top: 30%;
+    width: fit-content;
+    margin: auto;
 
-/* gir bilde til booking boksen */
-#bookingBoks{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url("../img/resturanteBilde.jpg");
-}
-/* gir bilde til meny bokssen */
-#menyBoks{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url("../img/Roastbiff.jpg");
-}
-/* gir bilde til accessibility boksen */
-#accessibilityBoks{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url("../img/kode.png");
-}
-/* gir bilde til topical boksen */
-#topicalBoks{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url("../img/sosiale_medier.jpg");
-}
-/* underlinje til boksene____________________________________________________________________________ */
 
+}
+.animasjonContainer h1{
+        /* font */
+        font-size: 45px;
+        transition: 0.4s;
+
+}
 .underlinje{
     border-radius: 10px;
-    background-color: rgb(143, 0, 0);     /* farge på underlinja */
-    height: 6px;                            /* høyden (tykkelsen) på underlinja */
-    transform: scaleX(0);                   /* "bredden på underlinja før transformation" */
-    transition: 0.4s;                       /* "transformation speed" */
+    background-color: rgb(143, 0, 0);       /* farge på underlinja */
+    height: 6px;                    /* høyden (tykkelsen) på underlinja */
+    transform: scaleX(0);           /* "bredden på underlinja før transformation" */
+    transition: 0.4s;               /* "transformation speed" */
   }
-.boksMedUnderlinje:hover .underlinje{
-    transform: scaleX(1);
+
+.indeksBoks:hover .animasjonContainer h1{
+    font-size: 50px;
+    background-position: center;
 }
 
 
 
 
-/* For telefon med bredde mindre enn 1000px */
-/* setter div boksene til bredde 80% og setter diven til display block isteden for inline-block */
-@media (max-width: 1000px) {.box-right, .box-left {
-    display: block;
-    width: 80%;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
+  .indeksBoks:hover  .underlinje{       /* https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_pluss */
+    /* https://litmus.com/community/discussions/5942-hover-effect-that-changes-a-different-element */
+transform: scaleX(1);           /* "bredden på underlinja etter transformation" */
+}
+
+.bookingBoks {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/resturanteBilde.jpg");
+}
+
+/* gir bilde til meny bokssen */
+.menyBoks {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* https://unsplash.com/photos/Uck7TR7XYFo */
+        url("../img/meny.png");
+}
+
+/* gir bilde til accessibility boksen */
+.accessibilityBoks {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* https://unsplash.com/photos/f77Bh3inUpE */
+        url("../img/kode.png");
+}
+
+/* gir bilde til topical boksen */
+.topicalBoks {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* https://unsplash.com/photos/EQSPI11rf68 */
+        url("../img/topical.png");
+}
+
+
+
+@media (max-width: 1000px) {.boksParContainer{
+    display: block;/* boksParContainer */
   }}
-/* setter teksten til 50px */
-@media (max-width:1000px){.boksTekst h1{
-    font-size: 50px;
-}}
-/*endrer posisjonen på bildeutsnittet */
-@media (max-width:1000px){#menyBoks{
-    background-position:  0px 60%;
-}}
-@media (max-width:1000px){#topicalBoks{
-    background-position:  0px 35%;
-}}
-
-
-  
-   
-
-
-  

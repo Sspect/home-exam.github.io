@@ -1,22 +1,63 @@
+/* hoved diven */
 .BakgrunnAccess{
     width: 60%;
     margin: auto;
     background-color:rgba(56, 51, 51, 0.601) ;
     padding: 10px;
 }
-#kontrast{
-    width: 100%;
+/* id for første bilde */
+#Kontrast{
+    height: 300px;
 }
-@media (max-width:1000px){.headerLenkeContainer a, .headerLenkeContainer{
-    font-size: 25px;    /* .headerLenkeContainer a */
-    display: block;     /* .headerLenkeContainer*/
-  }}
-  @media (max-width:1000px){.knappContainer{
-    height: 40px;    /* .knappContainer */
-  }}
-  @media (max-width:1000px){.logo{
-    display: block;     /* block og marin: aut gjør at logon sentreres */
-    margin: auto;
-    padding-top: 10px;  /* legger til mellomrom mellom logoen og toppen a siden */
-    height: 80px;      /* endrer størelsen på logoen */
-  }}
+/* id for andre bilde */
+#Kontrast2{
+  height: 300px;
+}
+/* div rundt bildene #kontrast og #kontrast2 */
+.AccessBilder{
+  width: 100%;
+  margin: auto;
+}
+/* For telefon */
+/* scaler hoved diven for mobil */
+@media (max-width: 1000px) {.BakgrunnAccess{
+  width: 100%;
+  margin: 0px;
+  padding: 0px
+}}
+/* skaper mellomrom mellon diven og teksten */
+@media (max-width: 1000px) {.BakgrunnAccess p{
+  margin: 15px;
+}}
+/* scalerer ned bildet til å passe telefon */
+@media (max-width: 1000px) {#Kontrast{
+  /* ratio 42:25 */
+width: 100%;
+height: 62%;
+}}
+/* sentrerer bildet og scalerer det ned til å passe telefon */
+@media (max-width: 1000px) {#Kontrast2{ 
+  /* ratio 71:100 */
+width: 40%;
+height: 65%;
+  padding: 0% 30% 0% 30%;
+}}
+/* scalerer ned bildet til å passe telefon */
+@media (max-width: 1000px) {#IndexFeil{
+  /* ratio 139:70 */
+width: 100%;
+height: 50%;
+}}
+/* scalerer ned bildet til å passe telefon */
+@media (max-width: 1000px) {#SpråkValg{
+  /* ratio 42:17 */
+width: 50%;
+height: 20%;
+}}
+/* scalerer ned bildet til å passe telefon */
+@media (max-width: 1000px) {#HeaderBar{
+  /* ratio 532:131 */
+width: 100%;
+height: 25%;
+}}
+

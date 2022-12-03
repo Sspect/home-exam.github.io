@@ -19,7 +19,7 @@
       <div class="headerLenkeContainer">
         
         <div class="knappContainer">                        <!-- Knapp Container -->
-          <a class="knapp" href="index.html">Hjem</a>    <!-- Knapp -->
+          <a class="knapp" href="index.html">Home</a>    <!-- Knapp -->
           <div class="underlinje"></div>                    <!-- Underlinje -->
         </div>
 
@@ -34,18 +34,18 @@
         </div>
         
         <div class="knappContainer">                        <!-- Knapp Container -->
-          <a class="knapp" href="accessibility.html">Tilgjenglighet</a>    <!-- Knapp -->
+          <a class="knapp" href="accessibility.html">Accessibility</a>    <!-- Knapp -->
           <div class="underlinje"></div>                    <!-- Underlinje -->
         </div>
 
         <div class="knappContainer">                        <!-- Knapp Container -->
-          <a class="knapp" href="topical_page.html">Aktuell side</a>    <!-- Knapp -->
+          <a class="knapp" href="topical_page.html">Topical Page</a>    <!-- Knapp -->
           <div class="underlinje"></div>                    <!-- Underlinje -->
         </div>
 
       </div>
           <div class="headerOverskriftContainer">
-            <h1>Tilgjenglighet</h1>
+            <h1>Accessibility</h1>
           </div>
     
     </header>
@@ -56,19 +56,88 @@
 
 
     <div class="BakgrunnAccess">
-      <strong>
-        4. Accessibility page: 
-      </strong>
-        <p>Det ble brukt WAVE https://wave.webaim.org/ for å teste koden sin brukervennlighet.
-           Gjennom denne nettsiden WAVE var en ting som gikk igjen, det var kontraster på siden. Siden websiden har en mørk bakgrunn, er det viktig med en klar kontrast mellom bakgrunnen og teksten. 
+      
+        <p> Det ble brukt<a href="https://wave.webaim.org/">WAVE</a> for å teste koden sin brukervennlighet.
+           Gjennom denne nettsiden WAVE var en ting som gikk igjen, det var kontraster på siden.
+           Siden websiden har en mørk bakgrunn, er det viktig med en klar kontrast mellom bakgrunnen og teksten.
            Sett på den tidligere meny-siden var kontrasten mellom rød pris, og mørk bakgrunn for liten.
-           Fargen som ble valgt var en farge som ga websiden en bedre score, men samtidig løftet det websiden med farger som var mer lik bildene vi har på matrettene.    </p>
-           <img id="Kontrast" src="img/Accessibility/Picture1.png" alt="">
-           <p>Home-siden (nå Hjem-siden) fikk opp en «feil», siden den har samme lenke til samme side som logoen. 
-            Det kan være til bry for tastatur- og skjermbrukere kan lenken fjernes, men dette var ikke ønskelig fordi de fleste websider har en logo med en «hjem-funksjon».
-             Dermed vil Home-knappen og logoen ta deg til indeks-siden.  </p>
+           Fargen som ble valgt var en farge som ga websiden en bedre score, 
+           men samtidig løftet det websiden med farger som var mer lik bildene av matrettene.</p>
+           <div class="AccessBilder"> 
+           <img id="Kontrast" src="img/Accessibility/Picture1.png" alt="Konrasten til menyen farge rød. ">
+           <img id="Kontrast2" src="img/Accessibility/Picture2.png" alt="Kontrasten til menyen var for dårlig og Wave siden viser oss hva slags gradering fargen har">
+           </div>
+           <p> Home-siden fikk opp en forbedring. Websiden har to lenker som tar brukeren til samme side.
+             Det kan være til bry for tastatur- og skjermbrukere. 
+             Det er ikke ønskelig å fjernes siden de fleste websider har en logo med en «hjem-funksjon».   </p>
+            <img id="IndexFeil"src="img/Accessibility/Picture4.png" alt="Index feil">
+            <p>Sidens språk er satt til norsk, dermed skal personer som er blinde 
+              eller har lesevansker ha mulighet til å kunne navigere seg rundt 
+              på siden med hjelp av nettleserens opplesnings-funksjon.</p>
+            <img id="SpråkValg" src="img/Accessibility/Picture8.png" alt="Språk valg i html lang = norsk ">
+
+              <p>«Header» har seks knapper, to til indeks-siden, en til meny, en til topical page og en til accessibility page. 
+              Det er en animasjon under hvert tekstelement, for å vise hvor musepekeren er på skjermen 
+              og for å vise hva brukeren klikker seg inn på. 
+              Headeren er også skalert til mindre skjermer ved å gå under hverandre, 
+              for å gjøre det enkelt å navigere seg på siden.  </p>
+              <img id="HeaderBar" src="img/Accessibility/Picture9.png" alt="HeaderBar viser animasjon når musepekeren er over">
+              <p>«Footer» er delt i to kolonner, en med åpningstider og en med kontaktinformasjon. 
+                Selve footeren er lik på alle sider, dette er for å gjøre det enkelt å se åpningstider 
+                og for å gjøre det enkelt å ta kontakt med restauranten. Det er i tillegg tre lenker, 
+                en for å ringe, en for å sende e-post og en for å finne stedet.  
+                <br> <br>
+                Indeks-siden har en animasjon på hver boks når musepekeren er over.
+                Dette er for å gjøre det enkelt å se hva brukeren skulle klikke seg inn på.
+                I tillegg skal bakgrunnsbildene gi et likt tema som teksten.  
+                <br> <br>
+                Booking-siden har på større skjermer to bilder av et langbord, men skal ikke vises på mindre skjermer. 
+                Her vil brukeren få med seg det viktigste på siden gjennom ord som har en understrek og tjukke bokstaver. 
+                Dette er for å gjøre det lettere å lese og for å få et blikkfang på siden.  
+                <br> <br>
+                Menysiden har et oppsett, hvor det vil være tre retter i bredden på større skjermer og to eller en for mindre skjermer.
+                Det skal være et klart skille mellom lunsj, middag og dessert. 
+                Websiden har ikoner med forskjellige allergener, fremfor tekst. 
+                Dette for å gjøre siden mer visuelt attraktiv enn andre menysider. 
+                Bildene skal illustrere matretten som blir servert på restauranten.  
+                <br> <br>
+                Topcial-siden skal ha to bilder, men avhengig av hvilken skjerm du ser på, vil du kun få opp et av dem. 
+                Teksten er satt opp på en slik måte at det skal se ut som en artikkel, med kilder og lenker på siden. 
+                Lenkene skal kunne ta brukeren til aktuelle nøkkelord på nettet.   </p>
+
+
+            
     </div>
-    <script>
-    </script>
+
+
+    <!-- footer med kontaktinformasjon og generell informasjon -->
+    <footer>
+      <div class="footerboks">
+      <!-- Åpningstider -->
+      <div class="kolonnefooter">
+        <div class="kontakt">
+      <h2>Åpningstider</h2>
+        <p><strong> Mandag til Torsdag:</strong> 11:00 - 21:00 (20:00)</p>
+        <p><strong>Fredag til Lørdag:</strong>  11:00 - 23:00 (22:00)</p>
+        <p><strong>Søndag:</strong> 12:00- 20:00 (19:00)</p>
+        <p>(Kjøkkenet stenger)</p>
+        </div>
+      </div>
+      <!-- generell informasjon om resturangen -->
+      <div class="kolonnefooter">
+      <div class="åpning">
+      <h2>Kontakt oss</h2>
+        <p><strong>Mobil:</strong> <a href="35 55 66 77"> 35 55 66 77</a></p>
+      
+        <p><strong>E-mail:</strong> <a href="mailto:Kontakt_oss@stanley.no">Kontakt_oss@stanley.no</a></p>
+      
+        <p>
+          <b>Adresse</b>:
+          <a href="https://www.google.com/maps/place/Storgata+13,+3921+Porsgrunn/@59.1381894,9.6422491,17z/data=!3m1!4b1!4m5!3m4!1s0x4647206d23140875:0x5b70fbfe3c2cd2df!8m2!3d59.1381867!4d9.6444431">Storgata 13,
+            3921 Porsgrunn</a> </p>
+          </div>
+      </div>
+      </div>
+    </footer>
 </body>
 </html>

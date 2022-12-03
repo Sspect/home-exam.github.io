@@ -1,7 +1,7 @@
 /* Header Bilde Bakgrunn ___________________________________________________________________________________________________*/
 .headerBildeBakgrunn{
     /* ../img/Resturant_bakgrunn.jpg */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.803), rgba(0, 0, 0, 0.5)) , url(../img/Resturant_bakgrunn.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.803), rgba(0, 0, 0, 0.5)) , url(../img/Resturant_bakgrunn.jpg); /*https://unsplash.com/photos/-mwNJswDlXE​*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -83,15 +83,20 @@
 
 /* max-width:1000px ___________________________________________________________________________________________________*/
 @media (max-width:1000px){.headerLenkeContainer a, .headerLenkeContainer{
-    font-size: 70px;    /* .headerLenkeContainer a */
+    margin: 0px;
+    font-size: 40px;    /* .headerLenkeContainer a */
     display: block;     /* .headerLenkeContainer*/
+  }}
+
+@media (max-width:1000px){.headerOverskriftContainer{
+    border-bottom: transparent;
   }}
 
 @media (max-width:1000px){.logo{
     display: block;     /* block og marin: utgjør at logon sentreres */
     margin: auto;
     padding-top: 20px;  /* legger til mellomrom mellom logoen og toppen a siden */
-    height: 250px;      /* endrer størelsen på logoen */
+    height: 200px;      /* endrer størelsen på logoen */
 }}
 
 

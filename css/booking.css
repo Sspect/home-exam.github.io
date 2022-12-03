@@ -1,6 +1,6 @@
 /* Bakgrunnsbildent høyre side */
 #bakgrunnBilde1{
-    background-image: url(../img/booking_bakgrunn/langbord.png);
+    background-image: url(../img/booking_bakgrunn/langbord.png); /* https://unsplash.com/photos/U3zasaqWD-I */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -8,7 +8,7 @@
 }
 /* Bakgrunnsbildent venstre side */
 #bakgrunnBilde2{
-    background-image: url(../img/booking_bakgrunn/langbord.png);
+    background-image: url(../img/booking_bakgrunn/langbord.png); /* https://unsplash.com/photos/U3zasaqWD-I */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -35,7 +35,7 @@
     margin:auto;
     padding: 10px;
     background-color: rgb(70, 70, 70);
-    height: 570px;
+    max-height: 700px;
     width: 300px;
     font-style: italic;
 }
@@ -187,22 +187,19 @@ select option {
 @media (max-width: 1000px) {#bakgrunnBilde2, #bakgrunnBilde1 {
     background-image: none;
 }}
+/* setter booking boksens bredde til 90% av skjermen */
+@media (max-width: 1000px) {.book-boks {
+    width: 90%;
+ }}
+ /* fjerner paddingen på knappene som tar det fram og tilbake mellom booking.html og  (bookbord.html eller bookLokale.html) */
+ @media (max-width: 1000px) {.bookingKnapper a{
+    padding: 0px;
+ }}
+ 
 
 
-@media (max-width:1000px){.headerLenkeContainer a, .headerLenkeContainer{
-    font-size: 25px;    /* .headerLenkeContainer a */
-    display: block;     /* .headerLenkeContainer*/
-  }}
-@media (max-width:1000px){.knappContainer{
-    height: 40px;    /* .knappContainer */
-  }}
 
-@media (max-width:1000px){.logo{
-    display: block;     /* block og marin: aut gjør at logon sentreres */
-    margin: auto;
-    padding-top: 10px;  /* legger til mellomrom mellom logoen og toppen a siden */
-    height: 80px;      /* endrer størelsen på logoen */
-}}
+
 
   
  

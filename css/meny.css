@@ -133,19 +133,9 @@
   width: 50%;
 }}  
 
-@media (max-width:1000px){.headerLenkeContainer a, .headerLenkeContainer{
-  font-size: 25px;    /* .headerLenkeContainer a */
-  display: block;     /* .headerLenkeContainer*/
-}}
-@media (max-width:1000px){.knappContainer{
-  height: 40px;    /* .knappContainer */
-}}
-@media (max-width:1000px){.logo{
-  display: block;     /* block og marin: aut gjør at logon sentreres */
-  margin: auto;
-  padding-top: 10px;  /* legger til mellomrom mellom logoen og toppen a siden */
-  height: 80px;      /* endrer størelsen på logoen */
-}}
+
+
+
 
 
 
