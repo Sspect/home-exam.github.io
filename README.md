@@ -1,6 +1,6 @@
 # exsam — DATA1200 Inclusive Web Design
 
-**Coruse**: DATA1200 — Inclusive Web Design  
+**Course**: DATA1200 — Inclusive Web Design  
 **Repository**: [home-exam.github.io](https://github.com/Sspect/home-exam.github.io)  
 **Grading Sheet**: [DATA1200 Grading sheet for examiners.pdf](pdfs/DATA1200%20Grading%20sheet%20for%20examiners.pdf)  
 **Final Assignment**: [Final assignment DATA1200 fall 2022.pdf](pdfs/Final%20assignment%20DATA1200%20fall%202022.pdf)  
