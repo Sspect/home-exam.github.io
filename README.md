@@ -1,5 +1,6 @@
 # exam — DATA1200 Inclusive Web Design
 
+**See website**: https://sspect.github.io/home-exam.github.io/index.html  
 **Course**: DATA1200 — Inclusive Web Design  
 **Repository**: [home-exam.github.io](https://github.com/Sspect/home-exam.github.io)  
 **Grading Sheet**: [DATA1200 Grading sheet for examiners.pdf](pdfs/DATA1200%20Grading%20sheet%20for%20examiners.pdf)  
