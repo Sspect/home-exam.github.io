@@ -1,4 +1,4 @@
-# exsam — DATA1200 Inclusive Web Design
+# exam — DATA1200 Inclusive Web Design
 
 **Course**: DATA1200 — Inclusive Web Design  
 **Repository**: [home-exam.github.io](https://github.com/Sspect/home-exam.github.io)  
@@ -8,7 +8,7 @@
 <br>
 
 ## About
-This repository hosts our exsam, a static website built for the [DATA1200](https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA1200/2021/H%C3%98ST) Inclusive Web Design course at OsloMet. It's implemented using HTML and CSS, with a focus on accessibility and inclusive design principles.
+This repository hosts our exam, a static website built for the [DATA1200](https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA1200/2021/H%C3%98ST) Inclusive Web Design course at OsloMet. It's implemented using HTML and CSS, with a focus on accessibility and inclusive design principles.
 
 <br>
 
